@@ -9,16 +9,16 @@
 import UIKit
 
 class RestaurantCell: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    @IBOutlet weak var restaurantImage: UIImageView!
+    @IBOutlet weak var restaurantName: UILabel!
+    @IBOutlet weak var restaurantCategory: UILabel!
+    @IBOutlet weak var restaurantLocation: UILabel!
+    
+    func configureCell( for restaurant: AllRestaurants) {
+        restaurantImage.image = UIImage(named: restaurant.restaurantImage)
+        restaurantName.text = restaurant.restaurantName
+        restaurantCategory.text = "\(restaurant.category)  \(restaurant.subcategory)"
+        restaurantLocation.text = "\(restaurant.borough), \(restaurant.neighborhood)"
+        restaurantLocation.textColor = UIColor.gray
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-
 }
