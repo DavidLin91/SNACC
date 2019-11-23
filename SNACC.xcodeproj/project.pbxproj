@@ -21,6 +21,7 @@
 		6344495D2389BE3900C7FF99 /* OffersBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344495C2389BE3900C7FF99 /* OffersBrain.swift */; };
 		634449612389DA6100C7FF99 /* RestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634449602389DA6100C7FF99 /* RestaurantVC.swift */; };
 		634449632389E09800C7FF99 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634449622389E09800C7FF99 /* RestaurantCell.swift */; };
+		63C415E32389F02600C9D0C5 /* LoyaltyCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C415E22389F02600C9D0C5 /* LoyaltyCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		6344495C2389BE3900C7FF99 /* OffersBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersBrain.swift; sourceTree = "<group>"; };
 		634449602389DA6100C7FF99 /* RestaurantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
 		634449622389E09800C7FF99 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		63C415E22389F02600C9D0C5 /* LoyaltyCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				634449602389DA6100C7FF99 /* RestaurantVC.swift */,
 				634449622389E09800C7FF99 /* RestaurantCell.swift */,
 				634449532389915200C7FF99 /* RestaurantInfoVC.swift */,
+				63C415E22389F02600C9D0C5 /* LoyaltyCard.swift */,
 				6344493923898DA700C7FF99 /* ExploreVC.swift */,
 				6344494523898DAA00C7FF99 /* Info.plist */,
 				6344494023898DAA00C7FF99 /* Assets.xcassets */,
@@ -186,6 +189,7 @@
 				6344493823898DA700C7FF99 /* SceneDelegate.swift in Sources */,
 				6344495B2389BE2B00C7FF99 /* RestaurantBrain.swift in Sources */,
 				634449542389915200C7FF99 /* RestaurantInfoVC.swift in Sources */,
+				63C415E32389F02600C9D0C5 /* LoyaltyCard.swift in Sources */,
 				634449632389E09800C7FF99 /* RestaurantCell.swift in Sources */,
 				6344495D2389BE3900C7FF99 /* OffersBrain.swift in Sources */,
 				634449612389DA6100C7FF99 /* RestaurantVC.swift in Sources */,

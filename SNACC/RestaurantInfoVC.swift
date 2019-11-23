@@ -9,22 +9,17 @@
 import UIKit
 
 class RestaurantInfoVC: UIViewController {
+    
+    var allrestaurant: AllRestaurants?
+    @IBOutlet weak var restaurantStockPhoto: UIImageView!
+    @IBOutlet weak var loyaltyCardButton: UIButton!
+    @IBOutlet weak var bookmarkButton: UIButton!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

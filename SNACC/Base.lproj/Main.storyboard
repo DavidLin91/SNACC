@@ -242,7 +242,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K1z-zu-TV1">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="K1z-zu-TV1">
                                 <rect key="frame" x="0.0" y="88" width="414" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="yrl-jJ-yCl"/>
@@ -268,6 +268,9 @@
                                 <state key="normal" title="LOYALTY CARD">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Blz-mh-Cr7" kind="show" id="OdN-cS-WgI"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXr-wn-rCE">
                                 <rect key="frame" x="354" y="348" width="40" height="40"/>
@@ -301,10 +304,31 @@
                         <viewLayoutGuide key="safeArea" id="nLR-o3-QeI"/>
                     </view>
                     <navigationItem key="navigationItem" id="d2i-Wx-8hG"/>
+                    <connections>
+                        <outlet property="bookmarkButton" destination="ZXr-wn-rCE" id="2Ze-MJ-JzN"/>
+                        <outlet property="loyaltyCardButton" destination="CHA-nd-dnf" id="NLd-zW-Mzb"/>
+                        <outlet property="restaurantStockPhoto" destination="K1z-zu-TV1" id="xtm-vh-4Ee"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kc9-ow-jB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2047.826086956522" y="-940.17857142857133"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Ur6-pu-ApB">
+            <objects>
+                <viewController id="Blz-mh-Cr7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="02p-2g-AB3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="CXw-HY-E7H"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="GC5-HC-I1B"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="orN-3z-L8S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2851" y="-940"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RSX-BK-9m3">
