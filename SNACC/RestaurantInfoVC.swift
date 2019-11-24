@@ -19,6 +19,8 @@ class RestaurantInfoVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.loyaltyCardButton.layer.cornerRadius = 10.0
+        self.bookmarkButton.layer.cornerRadius = 10.0
         restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
     }
 
