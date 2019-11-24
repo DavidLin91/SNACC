@@ -17,13 +17,28 @@ class RestaurantVC: UIViewController {
         }
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
-        //tableView.delegate = self
+        tableView.delegate = self
+        loadData()
+    }
+    
+    func loadData() {
         restaurants = AllRestaurants.allRestaurants
     }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let restaurantDVC = segue.destination as? RestaurantInfoVC,
+            let indexPath = tableView.indexPathForSelectedRow else {
+                fatalError("")
+        }
+        let restaurant = restaurants[indexPath.row]
+        restaurantDVC.allrestaurant = restaurant
+        
+    }
+
 }
 extension RestaurantVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
