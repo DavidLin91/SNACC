@@ -11,8 +11,9 @@ import UIKit
 class OffersVC: UIViewController {
     @IBOutlet weak var offersTableView: UITableView!
     
-    var allOffers = [AllOffersBrain]() {
+    var allOffer = [AllOffersBrain]() {
         didSet {
+            offersTableView.reloadData()
         }
     }
     
@@ -20,24 +21,27 @@ class OffersVC: UIViewController {
         super.viewDidLoad()
         offersTableView.backgroundColor = UIColor.white
         offersTableView.dataSource = self
+
         loadData()
     }
     
     func loadData() {
-        allOffers = AllOffersBrain.allOffers
+        allOffer = AllOffersBrain.allOffers
     }
     
 }
 extension OffersVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allOffers.count
+        return allOffer.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "offersCell", for: indexPath)
-        let offer = allOffers[indexPath.row]
+        let offer = allOffer[indexPath.row]
         cell.textLabel?.text = offer.restaurantName
-        cell.detailTextLabel?.text = offer.description
+        cell.detailTextLabel?.text = offer.description.uppercased()
         cell.imageView?.image = UIImage(named: offer.restaurantImage)
+        cell.textLabel?.textColor = UIColor.black
+        cell.detailTextLabel?.textColor = UIColor.lightGray
         return cell
     }
 }
