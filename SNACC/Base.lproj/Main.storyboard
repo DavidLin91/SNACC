@@ -541,11 +541,26 @@
                     </view>
                     <navigationItem key="navigationItem" id="GC5-HC-I1B"/>
                     <connections>
+                        <outlet property="buttonEight" destination="5Hh-eF-n4O" id="QiG-QW-KfL"/>
+                        <outlet property="buttonFive" destination="dfb-zf-PtE" id="YNa-HP-MD7"/>
+                        <outlet property="buttonFour" destination="YKE-m2-dwd" id="Itg-lb-k7C"/>
+                        <outlet property="buttonOne" destination="0Lu-Ny-lp8" id="qjw-Jh-dl9"/>
+                        <outlet property="buttonSeven" destination="K5M-aN-PgR" id="1cB-Xn-lcf"/>
+                        <outlet property="buttonSix" destination="WYT-Z9-20L" id="Pzh-ra-kY3"/>
+                        <outlet property="buttonThree" destination="1T4-BF-Yc8" id="D5Y-hp-FBF"/>
+                        <outlet property="buttonTwo" destination="w3u-7E-UEW" id="6o9-SR-KiC"/>
                         <outlet property="claimButton" destination="VeA-L0-I27" id="o3O-Oh-mao"/>
                         <outlet property="companyLogo" destination="rTu-n3-eyZ" id="B18-u6-Qwv"/>
                         <outlet property="learnMoreButton" destination="imZ-63-VXB" id="5xh-rr-fAY"/>
-                        <outlet property="loyaltyCardButtons" destination="5Hh-eF-n4O" id="yo8-Do-Yeg"/>
                         <outlet property="restaurantName" destination="VK3-jk-VEo" id="CxT-no-j67"/>
+                        <outletCollection property="LoyaltyButtons" destination="0Lu-Ny-lp8" collectionClass="NSMutableArray" id="CPI-Hj-i0L"/>
+                        <outletCollection property="LoyaltyButtons" destination="w3u-7E-UEW" collectionClass="NSMutableArray" id="wSO-5s-6ag"/>
+                        <outletCollection property="LoyaltyButtons" destination="YKE-m2-dwd" collectionClass="NSMutableArray" id="X80-3L-6kf"/>
+                        <outletCollection property="LoyaltyButtons" destination="1T4-BF-Yc8" collectionClass="NSMutableArray" id="f8O-Fx-9YV"/>
+                        <outletCollection property="LoyaltyButtons" destination="WYT-Z9-20L" collectionClass="NSMutableArray" id="uZ7-JN-Urg"/>
+                        <outletCollection property="LoyaltyButtons" destination="dfb-zf-PtE" collectionClass="NSMutableArray" id="kxK-lK-Yev"/>
+                        <outletCollection property="LoyaltyButtons" destination="5Hh-eF-n4O" collectionClass="NSMutableArray" id="oiM-h7-4EH"/>
+                        <outletCollection property="LoyaltyButtons" destination="K5M-aN-PgR" collectionClass="NSMutableArray" id="iZu-2m-Wib"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="orN-3z-L8S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
