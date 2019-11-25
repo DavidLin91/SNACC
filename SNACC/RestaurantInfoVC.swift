@@ -16,6 +16,7 @@ class RestaurantInfoVC: UIViewController {
     @IBOutlet weak var loyaltyCardButton: UIButton!
     @IBOutlet weak var bookmarkButton: UIButton!
     @IBOutlet weak var restaurantNameLabel: UILabel!
+    @IBOutlet weak var restaurantInfoTV: UITableView!
     
     
 
@@ -25,6 +26,7 @@ class RestaurantInfoVC: UIViewController {
         self.bookmarkButton.layer.cornerRadius = 10.0
         restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
         restaurantNameLabel.text = allrestaurant?.restaurantName.uppercased()
+        restaurantInfoTV.backgroundColor = UIColor.white
     }
-
+    
 }

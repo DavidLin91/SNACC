@@ -13,9 +13,7 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var photosButton: UIButton!
     @IBOutlet weak var bookmarksButton: UIButton!
-    
     @IBOutlet weak var loyaltyCardsButton: UIButton!
-    
     @IBOutlet weak var logoutButton: UIButton!
     
     

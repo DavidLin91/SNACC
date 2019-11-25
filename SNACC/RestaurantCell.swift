@@ -20,5 +20,6 @@ class RestaurantCell: UITableViewCell {
         restaurantCategory.text = "\(restaurant.category)  \(restaurant.subcategory)"
         restaurantLocation.text = "\(restaurant.borough), \(restaurant.neighborhood)"
         restaurantLocation.textColor = UIColor.gray
+        self.restaurantImage.layer.cornerRadius = 5.0
     }
 }

@@ -22,6 +22,7 @@ class RestaurantVC: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         loadData()
+        tableView.backgroundColor = UIColor.white
     }
     
     func loadData() {
@@ -38,7 +39,8 @@ class RestaurantVC: UIViewController {
         restaurantDVC.allrestaurant = restaurant
         
     }
-
+    
+    
 }
 extension RestaurantVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

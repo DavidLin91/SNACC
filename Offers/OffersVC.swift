@@ -9,22 +9,35 @@
 import UIKit
 
 class OffersVC: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var offersTableView: UITableView!
+    
+    var allOffers = [AllOffersBrain]() {
+        didSet {
+        }
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        offersTableView.backgroundColor = UIColor.white
+        offersTableView.dataSource = self
+        loadData()
     }
-    */
-
+    
+    func loadData() {
+        allOffers = AllOffersBrain.allOffers
+    }
+    
+}
+extension OffersVC: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return allOffers.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "offersCell", for: indexPath)
+        let offer = allOffers[indexPath.row]
+        cell.textLabel?.text = offer.restaurantName
+        cell.detailTextLabel?.text = offer.description
+        cell.imageView?.image = UIImage(named: offer.restaurantImage)
+        return cell
+    }
 }
