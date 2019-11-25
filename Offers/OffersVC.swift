@@ -29,6 +29,19 @@ class OffersVC: UIViewController {
         allOffer = AllOffersBrain.allOffers
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let offersVC = segue.destination as? OffersDetailVC,
+            let indexPath = offersTableView.indexPathForSelectedRow else {
+                fatalError()
+        }
+        
+        let offer = allOffer[indexPath.row]
+        offersVC.offersDetail = offer
+    }
+    
+    
+    
+    
 }
 extension OffersVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

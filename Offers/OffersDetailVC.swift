@@ -20,7 +20,9 @@ class OffersDetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        restaurantName.text = "RESTAURANT NAME"
+        restaurantName.text = offersDetail?.restaurantName.uppercased()
+        offerSubtitle.text = offersDetail?.description.uppercased()
+        restaurantImage.image = UIImage(named: offersDetail?.restaurantImage ?? "" )
         self.claimOfferButton.layer.cornerRadius = 10.0
         self.offerDescription.layer.cornerRadius = 10.0
     }

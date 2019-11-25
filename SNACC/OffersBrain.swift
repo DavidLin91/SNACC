@@ -15,13 +15,12 @@ struct AllOffersBrain {
     let startDate: Int
     let endDate: Int
     let restaurantImage: String
+    let restLogo: String
 
     
     static let allOffers: [AllOffersBrain] = [
-        AllOffersBrain(restaurantName: "Chanson", description: "10% OFF ANY PASTRY", category: "Desserts", startDate: 15202019 , endDate: 15292020, restaurantImage: "chansontn"),
-        AllOffersBrain(restaurantName: "ViVi Bubble Tea", description: "FREE Drink Upgrade from Medium to Large", category: "Drinks", startDate: 059059, endDate: 09049864, restaurantImage: "vivitn")
-    
-
+        AllOffersBrain(restaurantName: "Chanson", description: "10% OFF ANY PASTRY", category: "Desserts", startDate: 15202019 , endDate: 15292020, restaurantImage: "chansontn", restLogo: "chansonlogo"),
+        AllOffersBrain(restaurantName: "ViVi Bubble Tea", description: "FREE Drink Upgrade from Medium to Large", category: "Drinks", startDate: 059059, endDate: 09049864, restaurantImage: "vivitn", restLogo: "vivilogo")
     ]
 }
 

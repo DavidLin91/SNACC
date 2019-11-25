@@ -25,6 +25,8 @@ class LoyaltyCardVC: UIViewController {
         super.viewDidLoad()
         self.learnMoreButton.layer.cornerRadius = 10.0
         self.claimButton.layer.cornerRadius = 10.0
-        restaurantName.text = "COMPANY NAME"
+        restaurantName.text = allRestaurants?.restaurantName.uppercased()
+        companyLogo.image = UIImage(named: allRestaurants!.restLogo)
+        
     }
 }

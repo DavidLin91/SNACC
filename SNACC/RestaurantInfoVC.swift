@@ -29,4 +29,12 @@ class RestaurantInfoVC: UIViewController {
         restaurantInfoTV.backgroundColor = UIColor.white
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let loyaltyCardVC = segue.destination as? LoyaltyCardVC else {
+            fatalError("")
+        }
+        loyaltyCardVC.allRestaurants = allrestaurant
+    }
+    
 }
