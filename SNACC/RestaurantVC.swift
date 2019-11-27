@@ -8,8 +8,14 @@
 
 import UIKit
 
+enum SearchScope {
+    case name
+    case description
+}
+
 class RestaurantVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var restaurants = [AllRestaurants]() {
         didSet {
@@ -17,10 +23,29 @@ class RestaurantVC: UIViewController {
         }
     }
     
+    var currentScope = SearchScope.name
+    var searchQuery = "" {
+        didSet{
+            switch currentScope {
+            case .name:
+                restaurants = AllRestaurants.allRestaurants.filter {
+                    $0.restaurantName.lowercased().contains(searchQuery.lowercased())   }
+            case .description:
+                restaurants = AllRestaurants.allRestaurants.filter {
+                $0.description.lowercased().contains(searchQuery.lowercased())   }
+            }
+        }
+    }
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
+        searchBar.delegate = self
         loadData()
         tableView.backgroundColor = UIColor.white
     }
@@ -28,6 +53,12 @@ class RestaurantVC: UIViewController {
     func loadData() {
         restaurants = AllRestaurants.allRestaurants
     }
+    
+    func filterHeadlines(for searchText: String) {  // (property observer) did set gets called
+        guard !searchText.isEmpty else { return } // guarding against an empty search query
+        restaurants = AllRestaurants.allRestaurants.filter { $0.restaurantName.lowercased().contains(searchText.lowercased())  }
+       }
+    
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,10 +68,7 @@ class RestaurantVC: UIViewController {
         }
         let restaurant = restaurants[indexPath.row]
         restaurantDVC.allrestaurant = restaurant
-        
     }
-    
-    
 }
 extension RestaurantVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,4 +87,17 @@ extension RestaurantVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+}
+
+extension RestaurantVC: UISearchBarDelegate {
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+    }
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+    guard !searchText.isEmpty else{
+    loadData()
+    return
+    }
+    searchQuery = searchText
+  }
 }

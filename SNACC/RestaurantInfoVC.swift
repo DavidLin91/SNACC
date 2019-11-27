@@ -19,14 +19,21 @@ class RestaurantInfoVC: UIViewController {
     @IBOutlet weak var restaurantInfoTV: UITableView!
     
     
+    override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    loyaltyCardButton.layer.cornerRadius = 10.0
+    bookmarkButton.layer.cornerRadius = 10.0
+    loyaltyCardButton.layer.cornerRadius = 10.0
+    bookmarkButton.layer.cornerRadius = 10.0
+    restaurantInfoTV.backgroundColor = UIColor.white
+    }
+    
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.loyaltyCardButton.layer.cornerRadius = 10.0
-        self.bookmarkButton.layer.cornerRadius = 10.0
-        restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
-        restaurantNameLabel.text = allrestaurant?.restaurantName.uppercased()
-        restaurantInfoTV.backgroundColor = UIColor.white
+    super.viewDidLoad()
+    restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
+    restaurantNameLabel.text = allrestaurant?.restaurantName.uppercased()
+    
     }
     
     
