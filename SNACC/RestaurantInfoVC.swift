@@ -42,6 +42,9 @@ class RestaurantInfoVC: UIViewController {
             fatalError("")
         }
         loyaltyCardVC.allRestaurants = allrestaurant
+
     }
+    
+    
     
 }

@@ -313,7 +313,7 @@
                                     <constraint firstAttribute="height" constant="250" id="us3-5Y-QQQ"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p54-W2-3tE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p54-W2-3tE" userLabel="restaurantInfoTV">
                                 <rect key="frame" x="0.0" y="359" width="414" height="366"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -321,16 +321,41 @@
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="addressCell" id="N2D-yA-yMg">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="restaurantInfoCell" rowHeight="130" id="N2D-yA-yMg" customClass="RestaurantInfoCell" customModule="SNACC" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N2D-yA-yMg" id="rDy-tN-j8y">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="130"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Restaurant Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wql-qq-ZBT">
+                                                    <rect key="frame" x="10" y="8" width="394" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Store Hours" borderStyle="roundedRect" placeholder="Store Hours" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nZo-sa-2ww">
+                                                    <rect key="frame" x="10" y="37" width="394" height="34"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="nZo-sa-2ww" secondAttribute="trailing" constant="10" id="6jO-A0-TX6"/>
+                                                <constraint firstItem="wql-qq-ZBT" firstAttribute="leading" secondItem="rDy-tN-j8y" secondAttribute="leading" constant="10" id="8Fp-YQ-Vb9"/>
+                                                <constraint firstItem="wql-qq-ZBT" firstAttribute="top" secondItem="rDy-tN-j8y" secondAttribute="top" constant="8" id="LDT-hO-lYT"/>
+                                                <constraint firstItem="nZo-sa-2ww" firstAttribute="leading" secondItem="rDy-tN-j8y" secondAttribute="leading" constant="10" id="keG-eG-nZ5"/>
+                                                <constraint firstItem="nZo-sa-2ww" firstAttribute="top" secondItem="wql-qq-ZBT" secondAttribute="bottom" constant="8" id="n3i-ku-hMp"/>
+                                                <constraint firstAttribute="trailing" secondItem="wql-qq-ZBT" secondAttribute="trailing" constant="10" id="sH2-fZ-Wq1"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="restaurantAdressLabel" destination="wql-qq-ZBT" id="s2i-AQ-L3v"/>
+                                            <outlet property="restaurantStoreHoursLabel" destination="nZo-sa-2ww" id="jwW-Ka-awi"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="storeHoursCell" id="a2d-l2-nQe">
-                                        <rect key="frame" x="0.0" y="71.5" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="158" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="a2d-l2-nQe" id="rB2-wX-Fio">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -338,7 +363,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="phoneNumberCell" id="W8y-TJ-iT1" userLabel="generalInfoCell">
-                                        <rect key="frame" x="0.0" y="115" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="201.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W8y-TJ-iT1" id="wcZ-b5-d4G">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -672,8 +697,8 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcH-gC-kxF">
-                                <rect key="frame" x="139" y="579" width="135" height="40"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcH-gC-kxF">
+                                <rect key="frame" x="140" y="580" width="135" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Fhb-OT-Hdp"/>
                                 </constraints>
@@ -770,7 +795,7 @@
         <image name="tag" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="raz-fe-Sus"/>
+        <segue reference="0aF-Ru-IdJ"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
