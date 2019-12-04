@@ -32,13 +32,10 @@ class RestaurantVC: UIViewController {
                     $0.restaurantName.lowercased().contains(searchQuery.lowercased())   }
             case .description:
                 restaurants = AllRestaurants.allRestaurants.filter {
-                $0.description.lowercased().contains(searchQuery.lowercased())   }
+                    $0.description.lowercased().contains(searchQuery.lowercased())   }
             }
         }
     }
-    
-    
-    
     
     
     override func viewDidLoad() {
@@ -57,7 +54,7 @@ class RestaurantVC: UIViewController {
     func filterHeadlines(for searchText: String) {  // (property observer) did set gets called
         guard !searchText.isEmpty else { return } // guarding against an empty search query
         restaurants = AllRestaurants.allRestaurants.filter { $0.restaurantName.lowercased().contains(searchText.lowercased())  }
-       }
+    }
     
     
     
@@ -73,7 +70,7 @@ class RestaurantVC: UIViewController {
 extension RestaurantVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurants.count
-}
+    }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "restaurantCell", for: indexPath) as? RestaurantCell else {
             fatalError("Could not retrieve restaurantCell")
@@ -94,10 +91,10 @@ extension RestaurantVC: UISearchBarDelegate {
         searchBar.resignFirstResponder()
     }
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-    guard !searchText.isEmpty else{
-    loadData()
-    return
+        guard !searchText.isEmpty else{
+            loadData()
+            return
+        }
+        searchQuery = searchText
     }
-    searchQuery = searchText
-  }
 }

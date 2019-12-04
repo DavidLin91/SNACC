@@ -17,15 +17,16 @@ class OffersDetailVC: UIViewController {
     @IBOutlet weak var offerDescription: UITextView!
     @IBOutlet weak var claimOfferButton: UIButton!
     
+    override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    self.claimOfferButton.layer.cornerRadius = 5.0
+    self.offerDescription.layer.cornerRadius = 5.0
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         restaurantName.text = offersDetail?.restaurantName.uppercased()
         offerSubtitle.text = offersDetail?.description.uppercased()
         restaurantImage.image = UIImage(named: offersDetail?.restaurantImage ?? "" )
-        self.claimOfferButton.layer.cornerRadius = 10.0
-        self.offerDescription.layer.cornerRadius = 10.0
     }
-    
-
 }

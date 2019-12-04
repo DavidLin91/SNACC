@@ -28,8 +28,8 @@ class LoyaltyCardVC: UIViewController {
     
     override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
-    learnMoreButton.layer.cornerRadius = 10.0
-    claimButton.layer.cornerRadius = 10.0
+    learnMoreButton.layer.cornerRadius = 5.0
+    claimButton.layer.cornerRadius = 5.0
     companyLogo.layer.cornerRadius = 5.0
     buttonOne.layer.cornerRadius = 5.0
     buttonTwo.layer.cornerRadius = 5.0
@@ -41,18 +41,13 @@ class LoyaltyCardVC: UIViewController {
     buttonEight.layer.cornerRadius = 5.0
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         restaurantName.text = allRestaurants?.restaurantName.uppercased()
-        companyLogo.image = UIImage(named: allRestaurants!.restLogo)
+        companyLogo.image = UIImage(named: allRestaurants?.restLogo ?? "")
         
     }
     
     @IBOutlet var LoyaltyButtons: [UIButton]!
-    
-    
-    
-    
 }

@@ -16,35 +16,56 @@ class RestaurantInfoVC: UIViewController {
     @IBOutlet weak var loyaltyCardButton: UIButton!
     @IBOutlet weak var bookmarkButton: UIButton!
     @IBOutlet weak var restaurantNameLabel: UILabel!
-    @IBOutlet weak var restaurantInfoTV: UITableView!
-    
+    @IBOutlet weak var storeHoursLabel: UILabel!
+    @IBOutlet weak var offersButton: UIButton!
+    @IBOutlet weak var callButton: UIButton!
+    @IBOutlet weak var mapButton: UIButton!
     
     override func viewDidLayoutSubviews() {
-    super.viewDidLayoutSubviews()
-    loyaltyCardButton.layer.cornerRadius = 10.0
-    bookmarkButton.layer.cornerRadius = 10.0
-    loyaltyCardButton.layer.cornerRadius = 10.0
-    bookmarkButton.layer.cornerRadius = 10.0
-    restaurantInfoTV.backgroundColor = UIColor.white
+        super.viewDidLayoutSubviews()
+        loyaltyCardButton.layer.cornerRadius = 5.0
+        bookmarkButton.layer.cornerRadius = 5.0
+        loyaltyCardButton.layer.cornerRadius = 5.0
+        bookmarkButton.layer.cornerRadius = 5.0
+        mapButton.layer.cornerRadius = 5.0
+        callButton.layer.cornerRadius = 5.0
+        offersButton.layer.cornerRadius = 5.0
     }
     
-
-    override func viewDidLoad() {
-    super.viewDidLoad()
-    restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
-    restaurantNameLabel.text = allrestaurant?.restaurantName.uppercased()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
+        restaurantNameLabel.text = allrestaurant?.restaurantName.uppercased()
+        storeHoursLabel.text = allrestaurant!.storeHours
+        mapButton.setTitle("  Address: \(allrestaurant!.address), \(allrestaurant!.borough)", for: .normal)
+        callButton.setTitle("  1-800-HOTLINE-BLING", for: .normal)
+        offersButton.setTitle(" OFFERS ", for: .normal)
+    }
+    
+    @IBAction func loyaltyCardButtonPressed(_ sender: Any) {
+        
+    }
+    
+    @IBAction func mapButtonPressed(_ sender: Any) {
+        
     }
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let loyaltyCardVC = segue.destination as? LoyaltyCardVC else {
-            fatalError("")
+        
+        if segue.identifier == "loyaltyCardSegue" {
+            guard let loyaltyCardVC = segue.destination as? LoyaltyCardVC else {
+                fatalError("")
+            }
+            loyaltyCardVC.allRestaurants = allrestaurant
+        } else if segue.identifier == "mapSegue" {
+            guard let mapSegue = segue.destination as? MapScreenVC else {
+                fatalError("")
+            }
+            mapSegue.allRestaurants = allrestaurant
         }
-        loyaltyCardVC.allRestaurants = allrestaurant
-
     }
-    
     
     
 }
