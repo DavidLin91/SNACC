@@ -16,11 +16,13 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var loyaltyCardsButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
     
+    override func viewWillLayoutSubviews() {
+    logoutButton.layer.cornerRadius = 10.0 //rounded corner buttons
+    profilePicture.layer.cornerRadius = profilePicture.frame.size.width / 2
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.logoutButton.layer.cornerRadius = 10.0 //rounded corner buttons
-        self.profilePicture.layer.cornerRadius = 10.0
         profilePicture.image = UIImage(named: "profilepic")
     }
     

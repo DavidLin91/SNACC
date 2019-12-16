@@ -366,8 +366,7 @@
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="mapButtonPressed:" destination="IN8-cj-KhV" eventType="touchUpInside" id="SyI-Jz-IMi"/>
-                                    <segue destination="0af-La-etG" kind="show" identifier="mapSegue" id="bly-Yv-uA7"/>
+                                    <segue destination="41q-dy-GEa" kind="show" identifier="mapSegue" id="Ke0-QS-jNB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2u-lA-GjT">
@@ -770,50 +769,71 @@
             <point key="canvasLocation" x="269.56521739130437" y="551.11607142857144"/>
         </scene>
         <!--Map ScreenVC-->
-        <scene sceneID="xsd-HO-Jjc">
+        <scene sceneID="IPJ-w7-I2c">
             <objects>
-                <viewController id="0af-La-etG" customClass="MapScreenVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CLS-a2-BJx">
+                <viewController id="41q-dy-GEa" customClass="MapScreenVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4E0-ZV-n39">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="sqV-Ov-8F1">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gzh-As-CC5">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
-                                <connections>
-                                    <outlet property="delegate" destination="0af-La-etG" id="CvL-Lv-GkU"/>
-                                </connections>
                             </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapPin" translatesAutoresizingMaskIntoConstraints="NO" id="2Us-M6-dSG">
+                                <rect key="frame" x="187" y="322.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="ERT-V3-zSr"/>
+                                    <constraint firstAttribute="height" constant="40" id="sJ5-wM-1q7"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VYz-UT-VLL">
+                                <rect key="frame" x="0.0" y="675" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.945867703" green="0.945867703" blue="0.945867703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pqc-8R-9rO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="sqV-Ov-8F1" firstAttribute="leading" secondItem="rrH-Gs-9wB" secondAttribute="leading" id="4p6-hZ-5xx"/>
-                            <constraint firstAttribute="bottom" secondItem="sqV-Ov-8F1" secondAttribute="bottom" id="Ec3-8d-njX"/>
-                            <constraint firstItem="sqV-Ov-8F1" firstAttribute="trailing" secondItem="rrH-Gs-9wB" secondAttribute="trailing" id="NR2-YR-RR9"/>
-                            <constraint firstItem="sqV-Ov-8F1" firstAttribute="top" secondItem="CLS-a2-BJx" secondAttribute="top" id="klf-IS-qKw"/>
+                            <constraint firstItem="gzh-As-CC5" firstAttribute="trailing" secondItem="fX7-o5-DaD" secondAttribute="trailing" id="CS3-Ke-8Hc"/>
+                            <constraint firstItem="VYz-UT-VLL" firstAttribute="leading" secondItem="fX7-o5-DaD" secondAttribute="leading" id="EDY-xR-gqx"/>
+                            <constraint firstItem="2Us-M6-dSG" firstAttribute="centerY" secondItem="4E0-ZV-n39" secondAttribute="centerY" constant="-20" id="Qj8-aJ-In4"/>
+                            <constraint firstItem="gzh-As-CC5" firstAttribute="bottom" secondItem="fX7-o5-DaD" secondAttribute="bottom" id="ZAL-5K-ERg"/>
+                            <constraint firstItem="fX7-o5-DaD" firstAttribute="trailing" secondItem="VYz-UT-VLL" secondAttribute="trailing" id="gBM-3t-CZP"/>
+                            <constraint firstItem="VYz-UT-VLL" firstAttribute="bottom" secondItem="fX7-o5-DaD" secondAttribute="bottom" id="hHq-PI-VcY"/>
+                            <constraint firstItem="gzh-As-CC5" firstAttribute="leading" secondItem="fX7-o5-DaD" secondAttribute="leading" id="nZz-XG-5zC"/>
+                            <constraint firstItem="2Us-M6-dSG" firstAttribute="centerX" secondItem="4E0-ZV-n39" secondAttribute="centerX" id="vLB-aw-N92"/>
+                            <constraint firstItem="gzh-As-CC5" firstAttribute="top" secondItem="fX7-o5-DaD" secondAttribute="top" id="xac-Pp-Dhg"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="rrH-Gs-9wB"/>
+                        <viewLayoutGuide key="safeArea" id="fX7-o5-DaD"/>
                     </view>
-                    <navigationItem key="navigationItem" id="tgL-IQ-me1"/>
+                    <navigationItem key="navigationItem" id="hVb-d2-eXd"/>
                     <connections>
-                        <outlet property="mapView" destination="sqV-Ov-8F1" id="d6I-th-5x6"/>
+                        <outlet property="addressLabel" destination="VYz-UT-VLL" id="LUq-BA-oxB"/>
+                        <outlet property="mapView" destination="gzh-As-CC5" id="x0A-vE-Mxp"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JQd-AQ-xXy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ViI-Y1-p5C" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2840.579710144928" y="-940.17857142857133"/>
+            <point key="canvasLocation" x="2789.8550724637685" y="-940.17857142857133"/>
         </scene>
     </scenes>
     <resources>
         <image name="SNACClogo" width="2048" height="2048"/>
         <image name="bookmark" catalog="system" width="56" height="64"/>
         <image name="globe" catalog="system" width="64" height="60"/>
+        <image name="mapPin" width="200" height="200"/>
         <image name="person" catalog="system" width="64" height="58"/>
         <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
         <image name="snowdays" width="1000" height="666"/>
         <image name="tag" catalog="system" width="64" height="58"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0aF-Ru-IdJ"/>
+        <segue reference="raz-fe-Sus"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
 </document>
