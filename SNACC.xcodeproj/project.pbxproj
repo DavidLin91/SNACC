@@ -27,6 +27,8 @@
 		63DE9CF723AF21B10032A666 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF623AF21B10032A666 /* UIViewController+Alerts.swift */; };
 		63DE9CF923AF21D60032A666 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF823AF21D60032A666 /* NetworkHelper.swift */; };
 		63DE9CFC23AF22030032A666 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CFB23AF22030032A666 /* AppError.swift */; };
+		63DE9D0023B06B2A0032A666 /* BookmarkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CFF23B06B2A0032A666 /* BookmarkVC.swift */; };
+		63DE9D0223B06DCC0032A666 /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9D0123B06DCC0032A666 /* BookmarkCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		63DE9CF623AF21B10032A666 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		63DE9CF823AF21D60032A666 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
 		63DE9CFB23AF22030032A666 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		63DE9CFF23B06B2A0032A666 /* BookmarkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkVC.swift; sourceTree = "<group>"; };
+		63DE9D0123B06DCC0032A666 /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 			isa = PBXGroup;
 			children = (
 				6344493B23898DA700C7FF99 /* ProfileVC.swift */,
+				63DE9CFF23B06B2A0032A666 /* BookmarkVC.swift */,
+				63DE9D0123B06DCC0032A666 /* BookmarkCell.swift */,
 			);
 			path = "Profile View";
 			sourceTree = "<group>";
@@ -250,6 +256,8 @@
 				634449632389E09800C7FF99 /* RestaurantCell.swift in Sources */,
 				6344495D2389BE3900C7FF99 /* OffersBrain.swift in Sources */,
 				63619E1E23987DBF007284E0 /* MapScreenVC.swift in Sources */,
+				63DE9D0223B06DCC0032A666 /* BookmarkCell.swift in Sources */,
+				63DE9D0023B06B2A0032A666 /* BookmarkVC.swift in Sources */,
 				634449612389DA6100C7FF99 /* RestaurantVC.swift in Sources */,
 				63DE9CF723AF21B10032A666 /* UIViewController+Alerts.swift in Sources */,
 				637B9BEB238B204200AEBDAA /* LoyaltyCardVC.swift in Sources */,
