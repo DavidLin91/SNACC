@@ -151,6 +151,9 @@
                                 <state key="normal" title="PHOTOS">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="6eC-Wi-CgF" kind="show" id="NKW-B7-s8m"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cAv-FG-y7M">
                                 <rect key="frame" x="107" y="527" width="200" height="30"/>
@@ -166,6 +169,9 @@
                                 <state key="normal" title="LOYALTY CARDS">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="NbS-wb-6oB" kind="showDetail" id="APE-Do-dma"/>
+                                </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hfX-RR-kfW">
                                 <rect key="frame" x="127" y="645" width="160" height="30"/>
@@ -219,7 +225,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179.7101449275362" y="-196.20535714285714"/>
+            <point key="canvasLocation" x="1180" y="388"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -239,7 +245,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-945" y="-196"/>
+            <point key="canvasLocation" x="-894" y="388"/>
         </scene>
         <!--OFFERS-->
         <scene sceneID="zvT-L8-w4V">
@@ -302,7 +308,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m1f-DE-3ne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1179.7101449275362" y="551.11607142857144"/>
+            <point key="canvasLocation" x="1180" y="1692"/>
         </scene>
         <!--Restaurant InfoVC-->
         <scene sceneID="AKc-Dg-or9">
@@ -425,6 +431,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kc9-ow-jB9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2047.826086956522" y="-940.17857142857133"/>
+        </scene>
+        <!--PhotosVC-->
+        <scene sceneID="VLt-ex-j5X">
+            <objects>
+                <viewController id="6eC-Wi-CgF" customClass="PhotosVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="m2t-UO-6hl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="AuP-u5-VBB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="giB-uQ-xMs"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wiG-Ul-dV6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048" y="-276"/>
         </scene>
         <!--LoyaltyCardVC-->
         <scene sceneID="Ur6-pu-ApB">
@@ -749,7 +771,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PGm-Kz-4Yn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2042.0289855072465" y="550.44642857142856"/>
+            <point key="canvasLocation" x="2048" y="1692"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="w6p-3K-yTI">
@@ -769,7 +791,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rit-Sk-aM0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="269.56521739130437" y="551.11607142857144"/>
+            <point key="canvasLocation" x="270" y="1692"/>
         </scene>
         <!--Map ScreenVC-->
         <scene sceneID="IPJ-w7-I2c">
@@ -863,7 +885,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f42-QE-wBd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2002.8985507246377" y="-196.20535714285714"/>
+            <point key="canvasLocation" x="2048" y="388"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0yk-ze-O8m">
@@ -874,6 +896,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d6M-6u-POK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.45065454459999998" blue="0.4742504917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
@@ -885,7 +908,22 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xFI-ll-BeL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="269.56521739130437" y="-196.20535714285714"/>
+            <point key="canvasLocation" x="270" y="388"/>
+        </scene>
+        <!--Profile LoyaltyVC-->
+        <scene sceneID="f7p-ez-019">
+            <objects>
+                <viewController id="NbS-wb-6oB" customClass="ProfileLoyaltyVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ykg-nA-1za">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Fmm-9f-DUI"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B5S-oK-Pre" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2048" y="1037"/>
         </scene>
     </scenes>
     <resources>
