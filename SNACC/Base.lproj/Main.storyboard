@@ -913,9 +913,16 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fX7-o5-DaD"/>
                     </view>
-                    <navigationItem key="navigationItem" id="hVb-d2-eXd"/>
+                    <navigationItem key="navigationItem" id="hVb-d2-eXd">
+                        <barButtonItem key="rightBarButtonItem" title="Get Directions" id="jve-8b-GHL">
+                            <connections>
+                                <action selector="getDirectonsButtonPressed:" destination="41q-dy-GEa" id="o3w-6r-6yL"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="addressLabel" destination="VYz-UT-VLL" id="LUq-BA-oxB"/>
+                        <outlet property="getDirectionsButton" destination="jve-8b-GHL" id="esl-SO-Zg8"/>
                         <outlet property="mapView" destination="gzh-As-CC5" id="x0A-vE-Mxp"/>
                     </connections>
                 </viewController>

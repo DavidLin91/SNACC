@@ -15,19 +15,23 @@ class MapScreenVC: UIViewController {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var getDirectionsButton: UIBarButtonItem!
+    
     
     let locationManager = CLLocationManager()  // setup location manager reference and initialize
     let regionInMeters: Double = 10000 // substituting int input since its going to be used a lot
-    
     var previousLocation: CLLocation?
+    
+    let geoCoder = CLGeocoder()
+    var directionsArray: [MKDirections] = []
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        checkLocationServices()
         locationManager.delegate = self
         mapView.delegate = self
-        }
+        checkLocationServices()
+    }
     
     
     func setupLocationManager() {
@@ -88,6 +92,52 @@ class MapScreenVC: UIViewController {
         return CLLocation(latitude: latitude, longitude: longitude)
     }
     
+    func getDirections() {
+        guard let location = locationManager.location?.coordinate else {
+            //ToDO: Inform user we don't have their current location
+            return
+        }
+        
+        let request = createDirectionRequest(from: location)
+        let directions = MKDirections(request: request)
+        resetMapView(withNew: directions)
+        
+        
+        directions.calculate { [unowned self] (response, error) in
+            //TODO: handle error if needed
+            guard let response = response else { return } //TODO: Show response nto available in an alert
+            
+            for route in response.routes {
+                self.mapView.addOverlay(route.polyline)
+                self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true) // adjusts the map size to see whole route
+            }
+        }
+    }
+    
+    func createDirectionRequest(from coordinate: CLLocationCoordinate2D) -> MKDirections.Request {
+        let destionationCoordinate = getCenterLocation(for: mapView).coordinate
+        let startingLocation = MKPlacemark(coordinate: coordinate)
+        let destination = MKPlacemark(coordinate: destionationCoordinate)
+        
+        let request = MKDirections.Request()
+        request.source = MKMapItem(placemark: startingLocation)
+        request.destination = MKMapItem(placemark: destination)
+        request.transportType = .automobile // need a segmented control for other forms of tramsportation
+        request.requestsAlternateRoutes = true
+        
+        return request
+    }
+    
+    func resetMapView(withNew directions: MKDirections) {
+        mapView.removeOverlays(mapView.overlays)
+        directionsArray.append(directions)
+        let _ = directionsArray.map { $0.cancel() }
+    }
+    
+    @IBAction func getDirectonsButtonPressed(_ sender: UIBarButtonItem) {
+        getDirections()
+    }
+    
 }
 
 
@@ -109,6 +159,8 @@ extension MapScreenVC: MKMapViewDelegate {
         
         guard center.distance(from: previousLocation) > 50 else { return }
         self.previousLocation = center
+        
+        geoCoder.cancelGeocode()
         
         geoCoder.reverseGeocodeLocation(center) {[weak self] (placemarks, error) in
             guard let self = self else { return }
@@ -135,4 +187,15 @@ extension MapScreenVC: MKMapViewDelegate {
             }
         }
     }
+    
+    func mapView(_ mapVIew: MKMapView, rendererFor overlay: MKOverlay) -> MKOverlayRenderer {
+        let renderer = MKPolylineRenderer(overlay: overlay as! MKPolyline)
+        renderer.strokeColor = .systemBlue
+        renderer.lineWidth = 5
+        
+        return renderer
+    }
+    
+    
+    
 }
