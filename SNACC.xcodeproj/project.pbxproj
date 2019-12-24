@@ -3,10 +3,14 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		633E2A2C23B164C300B5AD7D /* LearnMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E2A2B23B164C300B5AD7D /* LearnMore.swift */; };
+		633E2A2E23B164E300B5AD7D /* ClaimOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E2A2D23B164E300B5AD7D /* ClaimOffer.swift */; };
+		633E2A3023B169F500B5AD7D /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E2A2F23B169F500B5AD7D /* Restaurants.swift */; };
+		633E2A3223B1902A00B5AD7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 633E2A3123B1902A00B5AD7D /* GoogleService-Info.plist */; };
 		6344493623898DA700C7FF99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344493523898DA700C7FF99 /* AppDelegate.swift */; };
 		6344493823898DA700C7FF99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344493723898DA700C7FF99 /* SceneDelegate.swift */; };
 		6344493A23898DA700C7FF99 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344493923898DA700C7FF99 /* ExploreVC.swift */; };
@@ -31,9 +35,16 @@
 		63DE9D0223B06DCC0032A666 /* BookmarkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9D0123B06DCC0032A666 /* BookmarkCell.swift */; };
 		63DE9D0423B13C500032A666 /* ProfileLoyaltyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9D0323B13C500032A666 /* ProfileLoyaltyVC.swift */; };
 		63DE9D0623B1402B0032A666 /* PhotosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9D0523B1402B0032A666 /* PhotosVC.swift */; };
+		8472D71985712494E571A9CE /* Pods_SNACC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31E173FF2847BE5B4302D136 /* Pods_SNACC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E32AFB6568E03CF24519F7D /* Pods-SNACC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNACC.debug.xcconfig"; path = "Target Support Files/Pods-SNACC/Pods-SNACC.debug.xcconfig"; sourceTree = "<group>"; };
+		31E173FF2847BE5B4302D136 /* Pods_SNACC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNACC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		633E2A2B23B164C300B5AD7D /* LearnMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMore.swift; sourceTree = "<group>"; };
+		633E2A2D23B164E300B5AD7D /* ClaimOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimOffer.swift; sourceTree = "<group>"; };
+		633E2A2F23B169F500B5AD7D /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
+		633E2A3123B1902A00B5AD7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6344493223898DA700C7FF99 /* SNACC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNACC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6344493523898DA700C7FF99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6344493723898DA700C7FF99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +71,7 @@
 		63DE9D0123B06DCC0032A666 /* BookmarkCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkCell.swift; sourceTree = "<group>"; };
 		63DE9D0323B13C500032A666 /* ProfileLoyaltyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileLoyaltyVC.swift; sourceTree = "<group>"; };
 		63DE9D0523B1402B0032A666 /* PhotosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosVC.swift; sourceTree = "<group>"; };
+		A49C8AA215C76420CE6CA4EB /* Pods-SNACC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNACC.release.xcconfig"; path = "Target Support Files/Pods-SNACC/Pods-SNACC.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,12 +79,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8472D71985712494E571A9CE /* Pods_SNACC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		03E7FA56C5B3A55EAD896E44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				31E173FF2847BE5B4302D136 /* Pods_SNACC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		21E0086FA8F84F9F1F50A151 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E32AFB6568E03CF24519F7D /* Pods-SNACC.debug.xcconfig */,
+				A49C8AA215C76420CE6CA4EB /* Pods-SNACC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6344492923898DA700C7FF99 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +115,8 @@
 				634449572389B2FF00C7FF99 /* Offers View */,
 				63DE9CF323AF210C0032A666 /* Extensions */,
 				6344493323898DA700C7FF99 /* Products */,
+				21E0086FA8F84F9F1F50A151 /* Pods */,
+				03E7FA56C5B3A55EAD896E44 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +138,7 @@
 				6344495C2389BE3900C7FF99 /* OffersBrain.swift */,
 				6344495A2389BE2B00C7FF99 /* RestaurantBrain.swift */,
 				6344494523898DAA00C7FF99 /* Info.plist */,
+				633E2A3123B1902A00B5AD7D /* GoogleService-Info.plist */,
 				6344494023898DAA00C7FF99 /* Assets.xcassets */,
 			);
 			path = SNACC;
@@ -140,6 +173,8 @@
 				634449622389E09800C7FF99 /* RestaurantCell.swift */,
 				634449532389915200C7FF99 /* RestaurantInfoVC.swift */,
 				637B9BEA238B204200AEBDAA /* LoyaltyCardVC.swift */,
+				633E2A2B23B164C300B5AD7D /* LearnMore.swift */,
+				633E2A2D23B164E300B5AD7D /* ClaimOffer.swift */,
 				63619E1D23987DBF007284E0 /* MapScreenVC.swift */,
 			);
 			path = "Restaurants View";
@@ -164,6 +199,7 @@
 		63DE9CF223AF20E60032A666 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				633E2A2F23B169F500B5AD7D /* Restaurants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,9 +220,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6344494823898DAA00C7FF99 /* Build configuration list for PBXNativeTarget "SNACC" */;
 			buildPhases = (
+				F545A219E83DE68B43405020 /* [CP] Check Pods Manifest.lock */,
 				6344492E23898DA700C7FF99 /* Sources */,
 				6344492F23898DA700C7FF99 /* Frameworks */,
 				6344493023898DA700C7FF99 /* Resources */,
+				E7E7E4C7922A08EC7EA77542 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -236,12 +274,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				6344494423898DAA00C7FF99 /* LaunchScreen.storyboard in Resources */,
+				633E2A3223B1902A00B5AD7D /* GoogleService-Info.plist in Resources */,
 				6344494123898DAA00C7FF99 /* Assets.xcassets in Resources */,
 				6344493F23898DA700C7FF99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E7E7E4C7922A08EC7EA77542 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNACC/Pods-SNACC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SNACC/Pods-SNACC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SNACC/Pods-SNACC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F545A219E83DE68B43405020 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SNACC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6344492E23898DA700C7FF99 /* Sources */ = {
@@ -255,13 +336,16 @@
 				63DE9CFC23AF22030032A666 /* AppError.swift in Sources */,
 				6344494C23898E8400C7FF99 /* OffersVC.swift in Sources */,
 				634449562389B20B00C7FF99 /* OffersDetailVC.swift in Sources */,
+				633E2A2E23B164E300B5AD7D /* ClaimOffer.swift in Sources */,
 				6344493823898DA700C7FF99 /* SceneDelegate.swift in Sources */,
 				6344495B2389BE2B00C7FF99 /* RestaurantBrain.swift in Sources */,
 				63DE9CF923AF21D60032A666 /* NetworkHelper.swift in Sources */,
 				634449542389915200C7FF99 /* RestaurantInfoVC.swift in Sources */,
+				633E2A2C23B164C300B5AD7D /* LearnMore.swift in Sources */,
 				63DE9D0423B13C500032A666 /* ProfileLoyaltyVC.swift in Sources */,
 				634449632389E09800C7FF99 /* RestaurantCell.swift in Sources */,
 				6344495D2389BE3900C7FF99 /* OffersBrain.swift in Sources */,
+				633E2A3023B169F500B5AD7D /* Restaurants.swift in Sources */,
 				63619E1E23987DBF007284E0 /* MapScreenVC.swift in Sources */,
 				63DE9D0223B06DCC0032A666 /* BookmarkCell.swift in Sources */,
 				63DE9D0623B1402B0032A666 /* PhotosVC.swift in Sources */,
@@ -410,6 +494,7 @@
 		};
 		6344494923898DAA00C7FF99 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E32AFB6568E03CF24519F7D /* Pods-SNACC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -428,6 +513,7 @@
 		};
 		6344494A23898DAA00C7FF99 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A49C8AA215C76420CE6CA4EB /* Pods-SNACC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

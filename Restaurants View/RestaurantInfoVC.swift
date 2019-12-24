@@ -20,6 +20,8 @@ class RestaurantInfoVC: UIViewController {
     @IBOutlet weak var offersButton: UIButton!
     @IBOutlet weak var callButton: UIButton!
     @IBOutlet weak var mapButton: UIButton!
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var restaurantNumberLabel: UILabel!
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -38,8 +40,8 @@ class RestaurantInfoVC: UIViewController {
         restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
         restaurantNameLabel.text = allrestaurant?.restaurantName.uppercased()
         storeHoursLabel.text = allrestaurant!.storeHours
-        mapButton.setTitle("  Address: \(allrestaurant!.address), \(allrestaurant!.borough)", for: .normal)
-        callButton.setTitle("  1-800-HOTLINE-BLING", for: .normal)
+        addressLabel.text = "\(allrestaurant!.address), \(allrestaurant!.borough)"
+        restaurantNumberLabel.text = "1-800-RESTAURANT"
         offersButton.setTitle(" OFFERS ", for: .normal)
     }
     
