@@ -11,6 +11,7 @@
 		633E2A2E23B164E300B5AD7D /* ClaimOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E2A2D23B164E300B5AD7D /* ClaimOffer.swift */; };
 		633E2A3023B169F500B5AD7D /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E2A2F23B169F500B5AD7D /* Restaurants.swift */; };
 		633E2A3223B1902A00B5AD7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 633E2A3123B1902A00B5AD7D /* GoogleService-Info.plist */; };
+		633E2A3423B206A800B5AD7D /* OffersCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E2A3323B206A800B5AD7D /* OffersCell.swift */; };
 		6344493623898DA700C7FF99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344493523898DA700C7FF99 /* AppDelegate.swift */; };
 		6344493823898DA700C7FF99 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344493723898DA700C7FF99 /* SceneDelegate.swift */; };
 		6344493A23898DA700C7FF99 /* ExploreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344493923898DA700C7FF99 /* ExploreVC.swift */; };
@@ -45,6 +46,7 @@
 		633E2A2D23B164E300B5AD7D /* ClaimOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimOffer.swift; sourceTree = "<group>"; };
 		633E2A2F23B169F500B5AD7D /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
 		633E2A3123B1902A00B5AD7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		633E2A3323B206A800B5AD7D /* OffersCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersCell.swift; sourceTree = "<group>"; };
 		6344493223898DA700C7FF99 /* SNACC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNACC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6344493523898DA700C7FF99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6344493723898DA700C7FF99 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				6344494B23898E8400C7FF99 /* OffersVC.swift */,
+				633E2A3323B206A800B5AD7D /* OffersCell.swift */,
 				634449552389B20B00C7FF99 /* OffersDetailVC.swift */,
 			);
 			path = "Offers View";
@@ -340,6 +343,7 @@
 				6344493823898DA700C7FF99 /* SceneDelegate.swift in Sources */,
 				6344495B2389BE2B00C7FF99 /* RestaurantBrain.swift in Sources */,
 				63DE9CF923AF21D60032A666 /* NetworkHelper.swift in Sources */,
+				633E2A3423B206A800B5AD7D /* OffersCell.swift in Sources */,
 				634449542389915200C7FF99 /* RestaurantInfoVC.swift in Sources */,
 				633E2A2C23B164C300B5AD7D /* LearnMore.swift in Sources */,
 				63DE9D0423B13C500032A666 /* ProfileLoyaltyVC.swift in Sources */,

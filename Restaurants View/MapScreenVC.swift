@@ -101,12 +101,10 @@ class MapScreenVC: UIViewController {
         let request = createDirectionRequest(from: location)
         let directions = MKDirections(request: request)
         resetMapView(withNew: directions)
-        
-        
+
         directions.calculate { [unowned self] (response, error) in
             //TODO: handle error if needed
             guard let response = response else { return } //TODO: Show response nto available in an alert
-            
             for route in response.routes {
                 self.mapView.addOverlay(route.polyline)
                 self.mapView.setVisibleMapRect(route.polyline.boundingMapRect, animated: true) // adjusts the map size to see whole route

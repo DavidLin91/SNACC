@@ -21,7 +21,7 @@ class OffersVC: UIViewController {
         super.viewDidLoad()
         offersTableView.backgroundColor = UIColor.white
         offersTableView.dataSource = self
-
+        offersTableView.delegate = self
         loadData()
     }
     
@@ -46,13 +46,17 @@ extension OffersVC: UITableViewDataSource {
         return allOffer.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "offersCell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "offersCell", for: indexPath) as? OffersCell else {
+            fatalError()
+        }
         let offer = allOffer[indexPath.row]
-        cell.textLabel?.text = offer.restaurantName
-        cell.detailTextLabel?.text = offer.description.uppercased()
-        cell.imageView?.image = UIImage(named: offer.restaurantImage)
-        cell.textLabel?.textColor = UIColor.black
-        cell.detailTextLabel?.textColor = UIColor.lightGray
+        cell.configureCell(offer: offer)
         return cell
+    }
+}
+
+extension OffersVC: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
     }
 }
