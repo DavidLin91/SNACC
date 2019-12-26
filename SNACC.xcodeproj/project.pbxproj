@@ -26,6 +26,7 @@
 		6344495D2389BE3900C7FF99 /* OffersBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6344495C2389BE3900C7FF99 /* OffersBrain.swift */; };
 		634449612389DA6100C7FF99 /* RestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634449602389DA6100C7FF99 /* RestaurantVC.swift */; };
 		634449632389E09800C7FF99 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634449622389E09800C7FF99 /* RestaurantCell.swift */; };
+		63452B7F23B469BC0022845F /* ClaimCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63452B7E23B469BC0022845F /* ClaimCell.swift */; };
 		63619E1E23987DBF007284E0 /* MapScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63619E1D23987DBF007284E0 /* MapScreenVC.swift */; };
 		637B9BEB238B204200AEBDAA /* LoyaltyCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B9BEA238B204200AEBDAA /* LoyaltyCardVC.swift */; };
 		63DE9CF523AF21490032A666 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */; };
@@ -63,6 +64,7 @@
 		6344495C2389BE3900C7FF99 /* OffersBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersBrain.swift; sourceTree = "<group>"; };
 		634449602389DA6100C7FF99 /* RestaurantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
 		634449622389E09800C7FF99 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		63452B7E23B469BC0022845F /* ClaimCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimCell.swift; sourceTree = "<group>"; };
 		63619E1D23987DBF007284E0 /* MapScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenVC.swift; sourceTree = "<group>"; };
 		637B9BEA238B204200AEBDAA /* LoyaltyCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyCardVC.swift; sourceTree = "<group>"; };
 		63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				633E2A2B23B164C300B5AD7D /* LearnMore.swift */,
 				633E2A2D23B164E300B5AD7D /* ClaimOffer.swift */,
 				63619E1D23987DBF007284E0 /* MapScreenVC.swift */,
+				63452B7E23B469BC0022845F /* ClaimCell.swift */,
 			);
 			path = "Restaurants View";
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 				63DE9D0223B06DCC0032A666 /* BookmarkCell.swift in Sources */,
 				63DE9D0623B1402B0032A666 /* PhotosVC.swift in Sources */,
 				63DE9D0023B06B2A0032A666 /* BookmarkVC.swift in Sources */,
+				63452B7F23B469BC0022845F /* ClaimCell.swift in Sources */,
 				634449612389DA6100C7FF99 /* RestaurantVC.swift in Sources */,
 				63DE9CF723AF21B10032A666 /* UIViewController+Alerts.swift in Sources */,
 				637B9BEB238B204200AEBDAA /* LoyaltyCardVC.swift in Sources */,
