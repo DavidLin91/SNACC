@@ -9,10 +9,12 @@
 import UIKit
 
 class RestaurantCell: UITableViewCell {
+    
     @IBOutlet weak var restaurantImage: UIImageView!
     @IBOutlet weak var restaurantName: UILabel!
     @IBOutlet weak var restaurantCategory: UILabel!
     @IBOutlet weak var restaurantLocation: UILabel!
+    
     
     func configureCell( for restaurant: AllRestaurants) {
         restaurantImage.image = UIImage(named: restaurant.restaurantImage)

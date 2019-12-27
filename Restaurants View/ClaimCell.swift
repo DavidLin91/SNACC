@@ -13,4 +13,6 @@ class ClaimCell: UITableViewCell {
     @IBOutlet weak var claimButton: UIButton!
     @IBOutlet weak var requiredStampsLabel: UILabel!
     
+    
+    
 }
