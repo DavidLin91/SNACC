@@ -26,6 +26,7 @@
 		634449612389DA6100C7FF99 /* RestaurantVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634449602389DA6100C7FF99 /* RestaurantVC.swift */; };
 		634449632389E09800C7FF99 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634449622389E09800C7FF99 /* RestaurantCell.swift */; };
 		63452B7F23B469BC0022845F /* ClaimCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63452B7E23B469BC0022845F /* ClaimCell.swift */; };
+		634B518423B702110087697F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634B518323B702110087697F /* Login.storyboard */; };
 		63619E1E23987DBF007284E0 /* MapScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63619E1D23987DBF007284E0 /* MapScreenVC.swift */; };
 		637B9BEB238B204200AEBDAA /* LoyaltyCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B9BEA238B204200AEBDAA /* LoyaltyCardVC.swift */; };
 		63DE9CF523AF21490032A666 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */; };
@@ -63,6 +64,7 @@
 		634449602389DA6100C7FF99 /* RestaurantVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantVC.swift; sourceTree = "<group>"; };
 		634449622389E09800C7FF99 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		63452B7E23B469BC0022845F /* ClaimCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimCell.swift; sourceTree = "<group>"; };
+		634B518323B702110087697F /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		63619E1D23987DBF007284E0 /* MapScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenVC.swift; sourceTree = "<group>"; };
 		637B9BEA238B204200AEBDAA /* LoyaltyCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyCardVC.swift; sourceTree = "<group>"; };
 		63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				6344493723898DA700C7FF99 /* SceneDelegate.swift */,
 				6344494223898DAA00C7FF99 /* LaunchScreen.storyboard */,
 				6344493D23898DA700C7FF99 /* Main.storyboard */,
+				634B518323B702110087697F /* Login.storyboard */,
 				6344495C2389BE3900C7FF99 /* OffersBrain.swift */,
 				6344495A2389BE2B00C7FF99 /* RestaurantBrain.swift */,
 				6344494523898DAA00C7FF99 /* Info.plist */,
@@ -279,6 +282,7 @@
 				6344494423898DAA00C7FF99 /* LaunchScreen.storyboard in Resources */,
 				633E2A3223B1902A00B5AD7D /* GoogleService-Info.plist in Resources */,
 				6344494123898DAA00C7FF99 /* Assets.xcassets in Resources */,
+				634B518423B702110087697F /* Login.storyboard in Resources */,
 				6344493F23898DA700C7FF99 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
