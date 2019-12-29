@@ -142,33 +142,28 @@
 				6344493723898DA700C7FF99 /* SceneDelegate.swift */,
 				6344494223898DAA00C7FF99 /* LaunchScreen.storyboard */,
 				6344493D23898DA700C7FF99 /* Main.storyboard */,
-				634B518323B702110087697F /* Login.storyboard */,
 				6344494523898DAA00C7FF99 /* Info.plist */,
 				633E2A3123B1902A00B5AD7D /* GoogleService-Info.plist */,
 				6344494023898DAA00C7FF99 /* Assets.xcassets */,
-				63DE9CF223AF20E60032A666 /* Model */,
-				63DE9CF023AF207E0032A666 /* APIClient */,
+				63DE9CF223AF20E60032A666 /* Models */,
 				63DE9CF123AF20BF0032A666 /* NetworkServices */,
-				634B518523B864B70087697F /* Login */,
-				63DE9CEF23AF202F0032A666 /* Restaurants View */,
-				634449592389B37700C7FF99 /* Profile View */,
-				634449572389B2FF00C7FF99 /* Offers View */,
+				634B519023B917130087697F /* ViewControllers */,
 				63DE9CF323AF210C0032A666 /* Extensions */,
 			);
 			path = SNACC;
 			sourceTree = "<group>";
 		};
-		634449572389B2FF00C7FF99 /* Offers View */ = {
+		634449572389B2FF00C7FF99 /* Offers */ = {
 			isa = PBXGroup;
 			children = (
 				6344494B23898E8400C7FF99 /* OffersVC.swift */,
 				633E2A3323B206A800B5AD7D /* OffersCell.swift */,
 				634449552389B20B00C7FF99 /* OffersDetailVC.swift */,
 			);
-			path = "Offers View";
+			path = Offers;
 			sourceTree = "<group>";
 		};
-		634449592389B37700C7FF99 /* Profile View */ = {
+		634449592389B37700C7FF99 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
 				6344493B23898DA700C7FF99 /* ProfileVC.swift */,
@@ -177,12 +172,13 @@
 				63DE9D0323B13C500032A666 /* ProfileLoyaltyVC.swift */,
 				63DE9D0523B1402B0032A666 /* PhotosVC.swift */,
 			);
-			path = "Profile View";
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		634B518523B864B70087697F /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				634B518323B702110087697F /* Login.storyboard */,
 				634B518623B866870087697F /* SplashVC.swift */,
 				634B518823B867290087697F /* LoginVC.swift */,
 				634B518A23B8673C0087697F /* RecoverPasswordVC.swift */,
@@ -192,7 +188,18 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		63DE9CEF23AF202F0032A666 /* Restaurants View */ = {
+		634B519023B917130087697F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				634B518523B864B70087697F /* Login */,
+				63DE9CEF23AF202F0032A666 /* Restaurants */,
+				634449592389B37700C7FF99 /* Profile */,
+				634449572389B2FF00C7FF99 /* Offers */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63DE9CEF23AF202F0032A666 /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
 				634449602389DA6100C7FF99 /* RestaurantVC.swift */,
@@ -204,14 +211,7 @@
 				63619E1D23987DBF007284E0 /* MapScreenVC.swift */,
 				63452B7E23B469BC0022845F /* ClaimCell.swift */,
 			);
-			path = "Restaurants View";
-			sourceTree = "<group>";
-		};
-		63DE9CF023AF207E0032A666 /* APIClient */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = APIClient;
+			path = Restaurants;
 			sourceTree = "<group>";
 		};
 		63DE9CF123AF20BF0032A666 /* NetworkServices */ = {
@@ -223,14 +223,14 @@
 			path = NetworkServices;
 			sourceTree = "<group>";
 		};
-		63DE9CF223AF20E60032A666 /* Model */ = {
+		63DE9CF223AF20E60032A666 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				633E2A2F23B169F500B5AD7D /* Restaurants.swift */,
 				6344495C2389BE3900C7FF99 /* OffersBrain.swift */,
 				6344495A2389BE2B00C7FF99 /* RestaurantBrain.swift */,
 			);
-			path = Model;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		63DE9CF323AF210C0032A666 /* Extensions */ = {
