@@ -121,14 +121,6 @@
 			isa = PBXGroup;
 			children = (
 				6344493423898DA700C7FF99 /* SNACC */,
-				63DE9CF023AF207E0032A666 /* APIClient */,
-				63DE9CF123AF20BF0032A666 /* NetworkServices */,
-				63DE9CF223AF20E60032A666 /* Model */,
-				634B518523B864B70087697F /* Login */,
-				63DE9CEF23AF202F0032A666 /* Restaurants View */,
-				634449592389B37700C7FF99 /* Profile View */,
-				634449572389B2FF00C7FF99 /* Offers View */,
-				63DE9CF323AF210C0032A666 /* Extensions */,
 				6344493323898DA700C7FF99 /* Products */,
 				21E0086FA8F84F9F1F50A151 /* Pods */,
 				03E7FA56C5B3A55EAD896E44 /* Frameworks */,
@@ -151,11 +143,17 @@
 				6344494223898DAA00C7FF99 /* LaunchScreen.storyboard */,
 				6344493D23898DA700C7FF99 /* Main.storyboard */,
 				634B518323B702110087697F /* Login.storyboard */,
-				6344495C2389BE3900C7FF99 /* OffersBrain.swift */,
-				6344495A2389BE2B00C7FF99 /* RestaurantBrain.swift */,
 				6344494523898DAA00C7FF99 /* Info.plist */,
 				633E2A3123B1902A00B5AD7D /* GoogleService-Info.plist */,
 				6344494023898DAA00C7FF99 /* Assets.xcassets */,
+				63DE9CF223AF20E60032A666 /* Model */,
+				63DE9CF023AF207E0032A666 /* APIClient */,
+				63DE9CF123AF20BF0032A666 /* NetworkServices */,
+				634B518523B864B70087697F /* Login */,
+				63DE9CEF23AF202F0032A666 /* Restaurants View */,
+				634449592389B37700C7FF99 /* Profile View */,
+				634449572389B2FF00C7FF99 /* Offers View */,
+				63DE9CF323AF210C0032A666 /* Extensions */,
 			);
 			path = SNACC;
 			sourceTree = "<group>";
@@ -229,6 +227,8 @@
 			isa = PBXGroup;
 			children = (
 				633E2A2F23B169F500B5AD7D /* Restaurants.swift */,
+				6344495C2389BE3900C7FF99 /* OffersBrain.swift */,
+				6344495A2389BE2B00C7FF99 /* RestaurantBrain.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
