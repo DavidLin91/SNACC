@@ -32,6 +32,9 @@
 		634B518B23B8673C0087697F /* RecoverPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B518A23B8673C0087697F /* RecoverPasswordVC.swift */; };
 		634B518D23B8681E0087697F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B518C23B8681E0087697F /* SignUpVC.swift */; };
 		634B518F23B8684B0087697F /* UserInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B518E23B8684B0087697F /* UserInformationVC.swift */; };
+		634B519223B951590087697F /* Restaurants.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634B519123B951580087697F /* Restaurants.storyboard */; };
+		634B519423B951830087697F /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634B519323B951830087697F /* Profile.storyboard */; };
+		634B519623B951900087697F /* Offers.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 634B519523B951900087697F /* Offers.storyboard */; };
 		63619E1E23987DBF007284E0 /* MapScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63619E1D23987DBF007284E0 /* MapScreenVC.swift */; };
 		637B9BEB238B204200AEBDAA /* LoyaltyCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B9BEA238B204200AEBDAA /* LoyaltyCardVC.swift */; };
 		63DE9CF523AF21490032A666 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */; };
@@ -75,6 +78,9 @@
 		634B518A23B8673C0087697F /* RecoverPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordVC.swift; sourceTree = "<group>"; };
 		634B518C23B8681E0087697F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
 		634B518E23B8684B0087697F /* UserInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationVC.swift; sourceTree = "<group>"; };
+		634B519123B951580087697F /* Restaurants.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Restaurants.storyboard; sourceTree = "<group>"; };
+		634B519323B951830087697F /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		634B519523B951900087697F /* Offers.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Offers.storyboard; sourceTree = "<group>"; };
 		63619E1D23987DBF007284E0 /* MapScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenVC.swift; sourceTree = "<group>"; };
 		637B9BEA238B204200AEBDAA /* LoyaltyCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyCardVC.swift; sourceTree = "<group>"; };
 		63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -156,6 +162,7 @@
 		634449572389B2FF00C7FF99 /* Offers */ = {
 			isa = PBXGroup;
 			children = (
+				634B519523B951900087697F /* Offers.storyboard */,
 				6344494B23898E8400C7FF99 /* OffersVC.swift */,
 				633E2A3323B206A800B5AD7D /* OffersCell.swift */,
 				634449552389B20B00C7FF99 /* OffersDetailVC.swift */,
@@ -166,6 +173,7 @@
 		634449592389B37700C7FF99 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				634B519323B951830087697F /* Profile.storyboard */,
 				6344493B23898DA700C7FF99 /* ProfileVC.swift */,
 				63DE9CFF23B06B2A0032A666 /* BookmarkVC.swift */,
 				63DE9D0123B06DCC0032A666 /* BookmarkCell.swift */,
@@ -202,6 +210,7 @@
 		63DE9CEF23AF202F0032A666 /* Restaurants */ = {
 			isa = PBXGroup;
 			children = (
+				634B519123B951580087697F /* Restaurants.storyboard */,
 				634449602389DA6100C7FF99 /* RestaurantVC.swift */,
 				634449622389E09800C7FF99 /* RestaurantCell.swift */,
 				634449532389915200C7FF99 /* RestaurantInfoVC.swift */,
@@ -307,6 +316,9 @@
 				6344494123898DAA00C7FF99 /* Assets.xcassets in Resources */,
 				634B518423B702110087697F /* Login.storyboard in Resources */,
 				6344493F23898DA700C7FF99 /* Main.storyboard in Resources */,
+				634B519623B951900087697F /* Offers.storyboard in Resources */,
+				634B519423B951830087697F /* Profile.storyboard in Resources */,
+				634B519223B951590087697F /* Restaurants.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
