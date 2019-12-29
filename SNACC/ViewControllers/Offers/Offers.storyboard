@@ -151,6 +151,9 @@
                                 <state key="normal" title="RESTAURANT INFO">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <segue destination="fuM-E5-tHt" kind="show" id="Dvp-0H-pv9"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" text="RESTRICTIONS: Cannot be combined with other offers. Testing length" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="vTm-bz-NsJ">
                                 <rect key="frame" x="20" y="474" width="374" height="60"/>
@@ -206,6 +209,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jfk-vH-CdD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2048" y="1692"/>
+        </scene>
+        <!--RestaurantProfile-->
+        <scene sceneID="URd-Md-Mhf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Restaurants" referencedIdentifier="RestaurantProfile" id="fuM-E5-tHt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="DLh-Y6-hDC"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="H3v-fy-xps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2600" y="1882"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Vf3-Dc-Pbp">

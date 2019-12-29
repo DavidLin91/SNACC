@@ -39,8 +39,8 @@ class RestaurantInfoVC: UIViewController {
         super.viewDidLoad()
         restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
         restaurantNameLabel.text = allrestaurant?.restaurantName.uppercased()
-        storeHoursLabel.text = allrestaurant!.storeHours
-        addressLabel.text = "\(allrestaurant!.address), \(allrestaurant!.borough)"
+        storeHoursLabel.text = allrestaurant?.storeHours ?? "Need to refactor brain"
+        addressLabel.text = "\(allrestaurant?.address ?? ""), \(allrestaurant?.borough ?? "need to refactor brain")"
         restaurantNumberLabel.text = "1-800-RESTAURANT"
         offersButton.setTitle(" OFFERS ", for: .normal)
     }
