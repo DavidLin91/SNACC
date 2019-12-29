@@ -30,6 +30,8 @@
 		634B518723B866870087697F /* SplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B518623B866870087697F /* SplashVC.swift */; };
 		634B518923B867290087697F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B518823B867290087697F /* LoginVC.swift */; };
 		634B518B23B8673C0087697F /* RecoverPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B518A23B8673C0087697F /* RecoverPasswordVC.swift */; };
+		634B518D23B8681E0087697F /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B518C23B8681E0087697F /* SignUpVC.swift */; };
+		634B518F23B8684B0087697F /* UserInformationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634B518E23B8684B0087697F /* UserInformationVC.swift */; };
 		63619E1E23987DBF007284E0 /* MapScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63619E1D23987DBF007284E0 /* MapScreenVC.swift */; };
 		637B9BEB238B204200AEBDAA /* LoyaltyCardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 637B9BEA238B204200AEBDAA /* LoyaltyCardVC.swift */; };
 		63DE9CF523AF21490032A666 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */; };
@@ -71,6 +73,8 @@
 		634B518623B866870087697F /* SplashVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashVC.swift; sourceTree = "<group>"; };
 		634B518823B867290087697F /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		634B518A23B8673C0087697F /* RecoverPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordVC.swift; sourceTree = "<group>"; };
+		634B518C23B8681E0087697F /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		634B518E23B8684B0087697F /* UserInformationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInformationVC.swift; sourceTree = "<group>"; };
 		63619E1D23987DBF007284E0 /* MapScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapScreenVC.swift; sourceTree = "<group>"; };
 		637B9BEA238B204200AEBDAA /* LoyaltyCardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyaltyCardVC.swift; sourceTree = "<group>"; };
 		63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
@@ -184,6 +188,8 @@
 				634B518623B866870087697F /* SplashVC.swift */,
 				634B518823B867290087697F /* LoginVC.swift */,
 				634B518A23B8673C0087697F /* RecoverPasswordVC.swift */,
+				634B518C23B8681E0087697F /* SignUpVC.swift */,
+				634B518E23B8684B0087697F /* UserInformationVC.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -373,7 +379,9 @@
 				633E2A3023B169F500B5AD7D /* Restaurants.swift in Sources */,
 				63619E1E23987DBF007284E0 /* MapScreenVC.swift in Sources */,
 				63DE9D0223B06DCC0032A666 /* BookmarkCell.swift in Sources */,
+				634B518F23B8684B0087697F /* UserInformationVC.swift in Sources */,
 				63DE9D0623B1402B0032A666 /* PhotosVC.swift in Sources */,
+				634B518D23B8681E0087697F /* SignUpVC.swift in Sources */,
 				63DE9D0023B06B2A0032A666 /* BookmarkVC.swift in Sources */,
 				634B518723B866870087697F /* SplashVC.swift in Sources */,
 				63452B7F23B469BC0022845F /* ClaimCell.swift in Sources */,
