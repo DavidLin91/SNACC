@@ -7,20 +7,39 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--SplashVC-->
         <scene sceneID="8BE-1L-jeV">
             <objects>
-                <viewController id="6Ed-dp-Ktf" sceneMemberID="viewController">
+                <viewController id="6Ed-dp-Ktf" customClass="SplashVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F5Q-p3-FAq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="USb-ay-FrU"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bOL-s4-nwZ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RLh-gD-3Gx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="925" y="-579"/>
+            <point key="canvasLocation" x="1834.7826086956522" y="-579.24107142857144"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="33Z-6d-8hh">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mrl-8i-3QP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3e0-I2-z3E">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="6Ed-dp-Ktf" kind="relationship" relationship="rootViewController" id="05X-pv-OZg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vb7-0Z-kA3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="924.63768115942037" y="-579.24107142857144"/>
         </scene>
     </scenes>
 </document>
