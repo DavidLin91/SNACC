@@ -16,6 +16,9 @@ class OffersDetailVC: UIViewController {
     @IBOutlet weak var restaurantImage: UIImageView!
     @IBOutlet weak var offerDescription: UITextView!
     @IBOutlet weak var claimOfferButton: UIButton!
+    @IBOutlet weak var restrictionDescription: UITextView!
+    
+    
     
     override func viewDidLayoutSubviews() {
     super.viewDidLayoutSubviews()
@@ -28,5 +31,9 @@ class OffersDetailVC: UIViewController {
         restaurantName.text = offersDetail?.restaurantName.uppercased()
         offerSubtitle.text = offersDetail?.description.uppercased()
         restaurantImage.image = UIImage(named: offersDetail?.restaurantImage ?? "" )
+        offerDescription.isEditable = false
+        offerDescription.isSelectable = false
+        restrictionDescription.isEditable = false
+        restrictionDescription.isSelectable = false
     }
 }

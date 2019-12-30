@@ -544,7 +544,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0E32AFB6568E03CF24519F7D /* Pods-SNACC.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJJ3AHRK2K;
 				INFOPLIST_FILE = SNACC/Info.plist;
@@ -563,7 +562,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A49C8AA215C76420CE6CA4EB /* Pods-SNACC.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KJJ3AHRK2K;
 				INFOPLIST_FILE = SNACC/Info.plist;
