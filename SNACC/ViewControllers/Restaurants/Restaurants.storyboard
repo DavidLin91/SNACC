@@ -195,8 +195,11 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5g1-0T-U1D">
-                                <rect key="frame" x="20" y="443.5" width="25" height="30"/>
+                                <rect key="frame" x="20" y="443.5" width="60" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.45065454459999998" blue="0.4742504917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="giZ-L5-Cdb"/>
+                                </constraints>
                                 <state key="normal" title="OFFERS">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -230,7 +233,6 @@
                             <constraint firstItem="4eo-FX-3zD" firstAttribute="leading" secondItem="gdB-cF-mBS" secondAttribute="leading" constant="20" id="Kie-Or-LYS"/>
                             <constraint firstItem="C0C-M1-665" firstAttribute="trailing" secondItem="gdB-cF-mBS" secondAttribute="trailing" id="LT7-p7-vHh"/>
                             <constraint firstItem="C0C-M1-665" firstAttribute="leading" secondItem="gdB-cF-mBS" secondAttribute="leading" id="Ni7-fj-sw6"/>
-                            <constraint firstItem="gdB-cF-mBS" firstAttribute="trailing" secondItem="5g1-0T-U1D" secondAttribute="trailing" constant="330" id="REJ-91-M8P"/>
                             <constraint firstItem="cRj-Ob-oIn" firstAttribute="top" secondItem="gdB-cF-mBS" secondAttribute="top" constant="15" id="RNo-M0-qSH"/>
                             <constraint firstItem="Qqb-vB-QB1" firstAttribute="leading" secondItem="gdB-cF-mBS" secondAttribute="leading" constant="20" id="ToU-fL-BbV"/>
                             <constraint firstItem="XWZ-l2-J1O" firstAttribute="leading" secondItem="gdB-cF-mBS" secondAttribute="leading" constant="20" id="WOe-x2-Sjn"/>
@@ -264,7 +266,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LsW-mX-VIm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2047.826086956522" y="-940.17857142857133"/>
+            <point key="canvasLocation" x="2047.2" y="-940.47976011994012"/>
         </scene>
         <!--LoyaltyCardVC-->
         <scene sceneID="gtc-Uu-GGy">
@@ -486,6 +488,9 @@
                         <viewLayoutGuide key="safeArea" id="2Vd-EZ-90U"/>
                     </view>
                     <navigationItem key="navigationItem" id="rUU-V1-SSA"/>
+                    <connections>
+                        <outlet property="learnMore" destination="v6j-4I-FeY" id="Cc9-d5-Q9I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E2N-Lb-GZE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -501,7 +506,8 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="h9t-12-eO0">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="claimCell" rowHeight="149" id="SBw-K6-uXH" customClass="ClaimCell" customModule="SNACC" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="149"/>
@@ -514,7 +520,7 @@
                                                     <rect key="frame" x="10" y="8" width="394" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQ5-9g-LPO">
@@ -529,11 +535,13 @@
                                                     <rect key="frame" x="10" y="36.5" width="394" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="claimButton" destination="VQ5-9g-LPO" id="xxD-CY-lVZ"/>
                                             <outlet property="claimCellLabel" destination="ZlR-yr-9TI" id="Lj5-Ja-Y0c"/>
@@ -543,7 +551,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="h9t-12-eO0" secondAttribute="bottom" id="PNo-sT-8ap"/>
                             <constraint firstItem="h9t-12-eO0" firstAttribute="trailing" secondItem="KLT-Eg-8Uo" secondAttribute="trailing" id="QpK-Y0-edK"/>

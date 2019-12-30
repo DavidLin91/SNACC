@@ -58,7 +58,7 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="aFO-bu-FOr" kind="showDetail" id="giQ-ik-oSh"/>
+                                    <segue destination="aFO-bu-FOr" kind="show" id="giQ-ik-oSh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUS-Sd-x5w">
@@ -122,7 +122,7 @@
                     <view key="view" contentMode="scaleToFill" id="52B-kp-DXT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="M56-gu-m1M"/>
                     </view>
                     <navigationItem key="navigationItem" id="oab-N0-d9R"/>
@@ -154,7 +154,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="dJu-Kr-3vb" secondAttribute="bottom" id="5D9-2g-JBp"/>
                             <constraint firstItem="dJu-Kr-3vb" firstAttribute="trailing" secondItem="y0j-M6-c6P" secondAttribute="trailing" id="9c2-Na-QzQ"/>
@@ -198,15 +198,28 @@
             <objects>
                 <viewController id="aFO-bu-FOr" customClass="ProfileLoyaltyVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u6v-ff-BL0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="xKU-Td-C99">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xKU-Td-C99" firstAttribute="leading" secondItem="mhk-sn-Weg" secondAttribute="leading" id="ASR-El-Mej"/>
+                            <constraint firstItem="xKU-Td-C99" firstAttribute="trailing" secondItem="mhk-sn-Weg" secondAttribute="trailing" id="HnW-Ev-2DC"/>
+                            <constraint firstItem="xKU-Td-C99" firstAttribute="top" secondItem="mhk-sn-Weg" secondAttribute="top" id="noC-Vb-TbW"/>
+                            <constraint firstItem="xKU-Td-C99" firstAttribute="bottom" secondItem="mhk-sn-Weg" secondAttribute="bottom" id="tDP-Ym-jjT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="mhk-sn-Weg"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tkd-Oh-N5b"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pgu-Wr-EMN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1990" y="1317"/>
+            <point key="canvasLocation" x="1989.8550724637682" y="1316.5178571428571"/>
         </scene>
     </scenes>
     <resources>

@@ -9,10 +9,12 @@
 import UIKit
 
 class LearnMore: UIViewController {
-
+    @IBOutlet weak var learnMore: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        learnMore.isEditable = false
+        learnMore.isSelectable = false
     }
     
 
