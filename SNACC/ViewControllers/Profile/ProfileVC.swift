@@ -17,8 +17,8 @@ class ProfileVC: UIViewController {
     @IBOutlet weak var logoutButton: UIButton!
     
     override func viewWillLayoutSubviews() {
-    logoutButton.layer.cornerRadius = 10.0 //rounded corner buttons
-    profilePicture.layer.cornerRadius = profilePicture.frame.size.width / 2
+        logoutButton.layer.cornerRadius = 5.0 //rounded corner buttons
+        profilePicture.layer.cornerRadius = 10.0
     }
     
     override func viewDidLoad() {
@@ -32,7 +32,7 @@ class ProfileVC: UIViewController {
     
     
     
-
-
+    
+    
 }
 
