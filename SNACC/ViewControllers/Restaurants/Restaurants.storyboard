@@ -10,7 +10,7 @@
         <!--RestaurantVC-->
         <scene sceneID="qjZ-oJ-odF">
             <objects>
-                <viewController id="txS-Tu-V5U" userLabel="RestaurantVC" customClass="RestaurantVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" id="txS-Tu-V5U" userLabel="RestaurantVC" customClass="RestaurantVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="69c-uj-m22">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -284,13 +284,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RESTAURANT NAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="orL-0d-RL9">
-                                <rect key="frame" x="165" y="10" width="173" height="21"/>
+                                <rect key="frame" x="165" y="10" width="180" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="L O Y A L T Y   C A R D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gGq-AH-fz7">
-                                <rect key="frame" x="165" y="39" width="173" height="21"/>
+                                <rect key="frame" x="165" y="39" width="180" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -361,7 +361,7 @@
                                 <state key="normal" title="Button" image="SNACClogo"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZO-3D-10O">
-                                <rect key="frame" x="165" y="68" width="110" height="30"/>
+                                <rect key="frame" x="165" y="68" width="117" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.45065454459999998" blue="0.4742504917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="115" id="31R-ug-sQB"/>
@@ -374,7 +374,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zl6-fR-SM8">
-                                <rect key="frame" x="283" y="68" width="55" height="30"/>
+                                <rect key="frame" x="290" y="68" width="55" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.45065454459999998" blue="0.4742504917" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="55" id="OCf-WZ-qRN"/>
