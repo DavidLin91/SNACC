@@ -240,8 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				633E2A2F23B169F500B5AD7D /* Restaurants.swift */,
-				6344495C2389BE3900C7FF99 /* OffersBrain.swift */,
 				6344495A2389BE2B00C7FF99 /* RestaurantBrain.swift */,
+				6344495C2389BE3900C7FF99 /* OffersBrain.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
