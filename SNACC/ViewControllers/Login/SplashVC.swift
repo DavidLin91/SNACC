@@ -9,7 +9,9 @@
 import UIKit
 
 class SplashVC: UIViewController {
-
+    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var logInButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

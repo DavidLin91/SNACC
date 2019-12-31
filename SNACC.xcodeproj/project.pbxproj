@@ -188,9 +188,9 @@
 			children = (
 				634B518323B702110087697F /* Login.storyboard */,
 				634B518623B866870087697F /* SplashVC.swift */,
+				634B518C23B8681E0087697F /* SignUpVC.swift */,
 				634B518823B867290087697F /* LoginVC.swift */,
 				634B518A23B8673C0087697F /* RecoverPasswordVC.swift */,
-				634B518C23B8681E0087697F /* SignUpVC.swift */,
 				634B518E23B8684B0087697F /* UserInformationVC.swift */,
 			);
 			path = Login;
