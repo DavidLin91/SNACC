@@ -40,6 +40,7 @@
 		639FC05623BAEA6B00B6013F /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC05523BAEA6B00B6013F /* Utilities.swift */; };
 		639FC05823BAF6EA00B6013F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC05723BAF6EA00B6013F /* Constants.swift */; };
 		639FC05C23BBF56B00B6013F /* RestaurantsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC05B23BBF56B00B6013F /* RestaurantsAPIClient.swift */; };
+		639FC08C23BE8F6200B6013F /* SNACC.json in Resources */ = {isa = PBXBuildFile; fileRef = 639FC08B23BE8F6200B6013F /* SNACC.json */; };
 		63DE9CF523AF21490032A666 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */; };
 		63DE9CF723AF21B10032A666 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF623AF21B10032A666 /* UIViewController+Alerts.swift */; };
 		63DE9CF923AF21D60032A666 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF823AF21D60032A666 /* NetworkHelper.swift */; };
@@ -89,6 +90,7 @@
 		639FC05523BAEA6B00B6013F /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		639FC05723BAF6EA00B6013F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		639FC05B23BBF56B00B6013F /* RestaurantsAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsAPIClient.swift; sourceTree = "<group>"; };
+		639FC08B23BE8F6200B6013F /* SNACC.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SNACC.json; sourceTree = "<group>"; };
 		63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		63DE9CF623AF21B10032A666 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		63DE9CF823AF21D60032A666 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				633E2A2F23B169F500B5AD7D /* Restaurants.swift */,
+				639FC08B23BE8F6200B6013F /* SNACC.json */,
 				6344495A2389BE2B00C7FF99 /* RestaurantBrain.swift */,
 				6344495C2389BE3900C7FF99 /* OffersBrain.swift */,
 				639FC05B23BBF56B00B6013F /* RestaurantsAPIClient.swift */,
@@ -326,6 +329,7 @@
 				634B518423B702110087697F /* Login.storyboard in Resources */,
 				6344493F23898DA700C7FF99 /* Main.storyboard in Resources */,
 				634B519623B951900087697F /* Offers.storyboard in Resources */,
+				639FC08C23BE8F6200B6013F /* SNACC.json in Resources */,
 				634B519423B951830087697F /* Profile.storyboard in Resources */,
 				634B519223B951590087697F /* Restaurants.storyboard in Resources */,
 			);
