@@ -8,46 +8,46 @@
 
 import Foundation
 
+
 struct Restaurants: Codable {
-    let restaurants: [RestaurantData]
+    let restaurant1, restaurant2, restaurant3, restaurant4: Restaurant
+    let restaurant5, restaurant6, restaurant7, restaurant8: Restaurant
 }
 
-struct RestaurantData: Codable {
-    let name: String
+struct Restaurant: Codable {
+    let name, category, subCategory: String
     let location: Location
+    let restaurantImages: [RestaurantImage]
     let phone: String
     let hours: Hours
-    let offers: AllOffers
+    let offers: [OfferElement]
 }
 
-struct Location: Codable {
-    let address: String
-    let borough: String
-    let neighborhood: String
-    let long: Double
-    let lat: Double
-}
 
 struct Hours: Codable {
-    let monday: String
-    let tuesday: String
-    let wednesday: String
-    let thursday: String
-    let friday: String
-    let saturday: String
-    let sunday: String
+    let monday, tuesday, wednesday, thursday: String
+    let friday, saturday, sunday: String
 }
 
-struct AllOffers: Codable {
-    let offer1: OfferDetails
-    let offer2: OfferDetails
+
+struct Location: Codable {
+    let address, borough, neighborhood: String
+    let lat, lon: Double
 }
 
-struct OfferDetails: Codable {
-    let offerTitle: String
-    let startDate: String
-    let endDate: String
-    let description: String
-    let restriction: String
-    
+
+struct OfferElement: Codable {
+    let offer1, offer2: OfferClass
+}
+
+
+struct OfferClass: Codable {
+    let offerTitle, startDate, endDate, offerDescription: String
+    let offerRestriction: String
+}
+
+
+struct RestaurantImage: Codable {
+    let stock: String
+    let logo: String
 }

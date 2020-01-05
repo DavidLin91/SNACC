@@ -1,0 +1,371 @@
+{
+    "restaurants": [{
+            "name": "Chanson",
+            "category": "Dessert",
+            "subCategory": "Bakeries",
+            "location": [{
+                "address": "20 W 23rd St",
+                "borough": "Manhattan",
+                "neighborhood": "Flatiron",
+                "lat": 40.741650,
+                "lon": -73.990608
+            }],
+            "restaurantsImage": [{
+                "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+                "logo": ""
+            }],
+            "phone": "929-423-8880",
+            "hours": {
+                "Monday": "7:00 AM – 5:00 PM",
+                "Tuesday": "7:00 AM – 5:00 PM",
+                "Wednesday": "7:00 AM – 5:00 PM",
+                "Thursday": "7:00 AM – 5:00 PM",
+                "Friday": "7:00 AM – 5:00 PM",
+                "Saturday": "9:00 AM – 5:00 PM",
+                "Sunday": "10:00 AM – 5:00 PM"
+            },
+            "offers": [{
+                    "offer1": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }],
+
+                    "offer2": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }]
+                }
+
+            ]
+        },
+
+        {
+            "name": "Soft Swerve",
+            "category": "Dessert",
+            "subCategory": "Ice Cream",
+            "location": [{
+                "address": "85B Allen St",
+                "borough": "Manhattan",
+                "neighborhood": "Lower East Side",
+                "lat": 40.718170,
+                "lon": -73.991188
+            }],
+            "restaurantsImage": [{
+                "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+                "logo": ""
+            }],
+            "phone": "646-476-6311",
+            "hours": [{
+                "Monday": "2:00 PM – 10:00 PM",
+                "Tuesday": "2:00 PM – 10:00 PM",
+                "Wednesday": "2:00 PM – 10:00 PM",
+                "Thursday": "2:00 PM – 10:00 PM",
+                "Friday": "2:00 PM – 11:00 PM",
+                "Saturday": "12:00 PM – 11:00 PM",
+                "Sunday": "12:00 PM – 10:00 PM"
+            }],
+            "offers": [{
+                    "offer1": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }],
+
+                    "offer2": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }]
+                }
+
+            ]
+        },
+
+        {
+            "name": "Alimama",
+            "category": "Dessert",
+            "subCategory": "Donuts",
+            "location": [{
+                "address": "85B Allen St",
+                "borough": "Manhattan",
+                "neighborhood": "Chinatown",
+                "lat": 40.715729,
+                "lon": -73.999130
+            }],
+            "restaurantsImage": [{
+                "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+                "logo": ""
+            }],
+            "phone": "212-235-7288",
+            "hours": [{
+                "Monday": "11:30 AM – 9:00 PM",
+                "Tuesday": "11:30 AM – 9:00 PM",
+                "Wednesday": "11:30 AM – 9:00 PM",
+                "Thursday": "11:30 AM – 9:00 PM",
+                "Friday": "11:30 AM – 10:00 PM",
+                "Saturday": "11:00 AM – 10:00 PM",
+                "Sunday": "11:00 AM – 9:00 PM"
+            }],
+            "offers": [{
+                    "offer1": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }],
+
+                    "offer2": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }]
+                }
+
+            ]
+        },
+
+        {
+            "name": "Milk & Cream Cereal Bar",
+            "category": "Dessert",
+            "subCategory": "Ice Cream",
+            "location": [{
+                "address": "159 Mott St",
+                "borough": "Manhattan",
+                "neighborhood": "Little Italy",
+                "lat": 40.719580,
+                "lon": -73.996540
+            }],
+            "restaurantsImage": [{
+                "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+                "logo": ""
+            }],
+            "phone": "",
+            "hours": [{
+                "Monday": "12:00 PM – 10:00 PM",
+                "Tuesday": "12:00 PM – 10:00 PM",
+                "Wednesday": "12:00 PM – 10:00 PM",
+                "Thursday": "12:00 PM – 10:00 PM",
+                "Friday": "12:00 PM – 11:00 PM",
+                "Saturday": "12:00 PM – 11:00 PM",
+                "Sunday": "12:00 PM – 10:00 PM"
+            }],
+            "offers": [{
+                    "offer1": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }],
+
+                    "offer2": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }]
+                }
+
+            ]
+        },
+
+        {
+            "name": "Snowdays",
+            "category": "Dessert",
+            "subCategory": "Shaved Ice",
+            "location": [{
+                "address": "241 E 10th St",
+                "borough": "Manhattan",
+                "neighborhood": "East Village",
+                "lat": 40.729010,
+                "lon": -73.984700
+            }],
+            "restaurantsImage": [{
+                "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+                "logo": ""
+            }],
+            "phone": "",
+            "hours": [{
+                "Monday": "5:00 PM - 10:00 PM",
+                "Tuesday": "2:00 PM – 10:00 PM",
+                "Wednesday": "2:00 PM – 10:00 PM",
+                "Thursday": "2:00 PM – 10:00 PM",
+                "Friday": "2:00 PM – 11:00 PM",
+                "Saturday": "12:00 PM – 11:00 PM",
+                "Sunday": "12:00 PM – 10:00 PM"
+            }],
+            "offers": [{
+                    "offer1": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }],
+
+                    "offer2": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }]
+                }
+
+            ]
+        },
+
+        {
+            "name": "Snowdays",
+            "category": "Dessert",
+            "subCategory": "Shaved Ice",
+            "location": [{
+                "address": "241 E 10th St",
+                "borough": "Manhattan",
+                "neighborhood": "East Village",
+                "lat": 40.729010,
+                "lon": -73.984700
+            }],
+            "restaurantsImage": [{
+                "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+                "logo": ""
+            }],
+            "phone": "",
+            "hours": [{
+                "Monday": "5:00 PM - 10:00 PM",
+                "Tuesday": "2:00 PM – 10:00 PM",
+                "Wednesday": "2:00 PM – 10:00 PM",
+                "Thursday": "2:00 PM – 10:00 PM",
+                "Friday": "2:00 PM – 11:00 PM",
+                "Saturday": "12:00 PM – 11:00 PM",
+                "Sunday": "12:00 PM – 10:00 PM"
+            }],
+            "offers": [{
+                    "offer1": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }],
+
+                    "offer2": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }]
+                }
+
+            ]
+        },
+
+        {
+            "name": "Vivi Bubble Tea",
+            "category": "Dessert",
+            "subCategory": "Bubble Tea",
+            "location": [{
+                "address": "49 Bayard St",
+                "borough": "Manhattan",
+                "neighborhood": "Chinatown",
+                "lat": 40.715090,
+                "lon": -73.997530
+            }],
+            "restaurantsImage": [{
+                "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+                "logo": ""
+            }],
+            "phone": "212-566-6833",
+            "hours": [{
+                "Monday": "5:00 PM - 10:00 PM",
+                "Tuesday": "2:00 PM – 10:00 PM",
+                "Wednesday": "2:00 PM – 10:00 PM",
+                "Thursday": "2:00 PM – 10:00 PM",
+                "Friday": "2:00 PM – 11:00 PM",
+                "Saturday": "12:00 PM – 11:00 PM",
+                "Sunday": "12:00 PM – 10:00 PM"
+            }],
+            "offers": [{
+                    "offer1": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }],
+
+                    "offer2": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }]
+                }
+
+            ]
+        },
+
+        {
+            "name": "Eggloo",
+            "category": "Dessert",
+            "subCategory": "Ice Cream",
+            "location": [{
+                "address": "60 Mulberry St",
+                "borough": "Manhattan",
+                "neighborhood": "Chinatown",
+                "lat": 40.715480,
+                "lon": -73.999230
+            }],
+            "restaurantsImage": [{
+                "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+                "logo": ""
+            }],
+            "phone": "",
+            "hours": [{
+                "Monday": "12:00 PM - 10:00 PM",
+                "Tuesday": "12:00 PM - 10:00 PM",
+                "Wednesday": "12:00 PM - 10:00 PM",
+                "Thursday": "12:00 PM - 10:00 PM",
+                "Friday": "12:00 PM – 11:00 PM",
+                "Saturday": "12:00 PM – 11:00 PM",
+                "Sunday": "12:00 PM – 10:00 PM"
+            }],
+            "offers": [{
+                    "offer1": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }],
+
+                    "offer2": [{
+                        "offerTitle": "",
+                        "startDate": "",
+                        "endDate": "",
+                        "description": "",
+                        "restriction": ""
+                    }]
+                }
+
+            ]
+        }
+
+    ]
+}
