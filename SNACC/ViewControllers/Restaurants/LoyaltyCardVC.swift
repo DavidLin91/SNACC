@@ -10,7 +10,7 @@ import UIKit
 
 class LoyaltyCardVC: UIViewController {
     
-    var allRestaurants: AllRestaurants?
+    var allRestaurants: Restaurant?
     
     @IBOutlet weak var companyLogo: UIImageView!
     @IBOutlet weak var restaurantName: UILabel!
@@ -44,8 +44,8 @@ class LoyaltyCardVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        restaurantName.text = allRestaurants?.restaurantName.uppercased()
-        companyLogo.image = UIImage(named: allRestaurants?.restLogo ?? "")
+        restaurantName.text = allRestaurants?.name.uppercased()
+       // companyLogo.image = UIImage(named: allRestaurants?.restLogo ?? "")
         
     }
     

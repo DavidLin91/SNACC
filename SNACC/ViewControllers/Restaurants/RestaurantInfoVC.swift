@@ -10,7 +10,7 @@ import UIKit
 
 class RestaurantInfoVC: UIViewController {
     
-    var allrestaurant: AllRestaurants?
+    var allrestaurant: Restaurant?
     
     @IBOutlet weak var restaurantStockPhoto: UIImageView!
     @IBOutlet weak var loyaltyCardButton: UIButton!
@@ -37,11 +37,14 @@ class RestaurantInfoVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
-        restaurantNameLabel.text = allrestaurant?.restaurantName.uppercased()
-        storeHoursLabel.text = allrestaurant?.storeHours ?? "Need to refactor brain"
-        addressLabel.text = "\(allrestaurant?.address ?? ""), \(allrestaurant?.borough ?? "need to refactor brain")"
-        restaurantNumberLabel.text = "1-800-RESTAURANT"
+        
+        // unsure how to access "allRest"
+        
+       // restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
+        restaurantNameLabel.text = allrestaurant?.name.uppercased()
+        storeHoursLabel.text = allrestaurant?.hours.monday
+        addressLabel.text = "\(allrestaurant?.location.address ?? "N/A"), \(allrestaurant?.location.borough ?? "")"
+        restaurantNumberLabel.text = allrestaurant?.phone
         offersButton.setTitle(" OFFERS ", for: .normal)
     }
     

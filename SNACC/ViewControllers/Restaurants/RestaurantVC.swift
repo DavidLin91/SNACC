@@ -17,44 +17,53 @@ class RestaurantVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
-    var restaurants = [AllRestaurants]() {
+    var restaurants = [Restaurant]() {
         didSet {
-            tableView.reloadData()
-        }
-    }
-    
-    var currentScope = SearchScope.name
-    var searchQuery = "" {
-        didSet{
-            switch currentScope {
-            case .name:
-                restaurants = AllRestaurants.allRestaurants.filter {
-                    $0.restaurantName.lowercased().contains(searchQuery.lowercased())   }
-            case .description:
-                restaurants = AllRestaurants.allRestaurants.filter {
-                    $0.description.lowercased().contains(searchQuery.lowercased())   }
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
             }
         }
     }
     
+    var currentScope = SearchScope.name
+//    var searchQuery = "" {
+//        didSet{
+//            switch currentScope {
+//            case .name:
+//                restaurants = [Restaurant].filter {
+//                    $0.restaurantName.lowercased().contains(searchQuery.lowercased())   }
+//            case .description:
+//                restaurants = AllRestaurants.allRestaurants.filter {
+//                    $0.description.lowercased().contains(searchQuery.lowercased())   }
+//            }
+//        }
+//    }
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.dataSource = self
         tableView.delegate = self
-        searchBar.delegate = self
+        //searchBar.delegate = self
         loadData()
         tableView.backgroundColor = UIColor.white
     }
     
     func loadData() {
-        restaurants = AllRestaurants.allRestaurants
+        RestaurantsAPIClient.getRestaurants { (result) in
+            switch result {
+            case .failure:
+                break
+            case .success(let data):
+                self.restaurants = data.allRest
+            }
+        }
     }
     
-    func filterHeadlines(for searchText: String) {  // (property observer) did set gets called
-        guard !searchText.isEmpty else { return } // guarding against an empty search query
-        restaurants = AllRestaurants.allRestaurants.filter { $0.restaurantName.lowercased().contains(searchText.lowercased())  }
-    }
+//    func filterHeadlines(for searchText: String) {  // (property observer) did set gets called
+//        guard !searchText.isEmpty else { return } // guarding against an empty search query
+//        restaurants = AllRestaurants.allRestaurants.filter { $0.restaurantName.lowercased().contains(searchText.lowercased())  }
+//    }
     
     
     
@@ -70,6 +79,7 @@ class RestaurantVC: UIViewController {
 extension RestaurantVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return restaurants.count
+       
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "restaurantCell", for: indexPath) as? RestaurantCell else {
@@ -86,15 +96,15 @@ extension RestaurantVC: UITableViewDelegate {
     }
 }
 
-extension RestaurantVC: UISearchBarDelegate {
-    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        searchBar.resignFirstResponder()
-    }
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        guard !searchText.isEmpty else{
-            loadData()
-            return
-        }
-        searchQuery = searchText
-    }
-}
+//extension RestaurantVC: UISearchBarDelegate {
+//    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+//        searchBar.resignFirstResponder()
+//    }
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        guard !searchText.isEmpty else{
+//            loadData()
+//            return
+//        }
+//        searchQuery = searchText
+//    }
+//}

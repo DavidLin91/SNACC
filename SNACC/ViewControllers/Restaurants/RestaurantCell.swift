@@ -16,11 +16,11 @@ class RestaurantCell: UITableViewCell {
     @IBOutlet weak var restaurantLocation: UILabel!
     
     
-    func configureCell( for restaurant: AllRestaurants) {
-        restaurantImage.image = UIImage(named: restaurant.restaurantImage)
-        restaurantName.text = restaurant.restaurantName.uppercased()
-        restaurantCategory.text = "\(restaurant.category)  \(restaurant.subcategory)"
-        restaurantLocation.text = "\(restaurant.borough), \(restaurant.neighborhood)"
+    func configureCell( for restaurant: Restaurant) {
+        //restaurantImage.image = UIImage(named: restaurant.restaurantImage)
+        restaurantName.text = restaurant.name.uppercased()
+        restaurantCategory.text = "\(restaurant.category)  \(restaurant.subCategory)"
+        restaurantLocation.text = "\(restaurant.location.borough), \(restaurant.location.neighborhood)"
         restaurantLocation.textColor = UIColor.gray
         self.restaurantImage.layer.cornerRadius = 5.0
     }

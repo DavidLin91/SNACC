@@ -9,9 +9,9 @@
 import Foundation
 
 struct RestaurantsAPIClient {
-    static func getRestaurants(completion: @escaping(Result<[Restaurants], AppError>) -> ()) {
+    static func getRestaurants(completion: @escaping(Result< Restaurants, AppError>) -> ()) {
         
-        let endpointURL = "https://snacc-71a6a.firebaseio.com/"
+        let endpointURL = "https://snacc-71a6a.firebaseio.com/.json"
         
         guard let url = URL(string: endpointURL) else {
             completion(.failure(.badURL(endpointURL)))
@@ -19,18 +19,21 @@ struct RestaurantsAPIClient {
         }
         
         let request = URLRequest(url: url)
-        var restaurant = [Restaurants]()
         
         NetworkHelper.shared.performDataTask(with: request) { (result) in
             switch result {
             case .failure(let appError):
+                print("error")
                 completion(.failure(.networkClientError(appError)))
             case .success(let data):
+                // debugging (helps check json data)
+                let x = String(data: data, encoding: .utf8)
                 do{
-                    let restaurantData = try JSONDecoder().decode([Restaurants].self, from: data)
-                    restaurant = restaurantData
-                    completion(.success(restaurant))
+                    let restaurantData = try JSONDecoder().decode(Restaurants.self, from: data)
+                    print(restaurantData)
+                    completion(.success(restaurantData))
                 } catch {
+                    print(error)
                     completion(.failure(.decodingError(error)))
                 }
             }

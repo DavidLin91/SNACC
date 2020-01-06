@@ -11,7 +11,7 @@ import MapKit // to show map
 import CoreLocation // to show user location
 
 class MapScreenVC: UIViewController {
-    var allRestaurants: AllRestaurants?
+    var allRestaurants: Restaurant?
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var addressLabel: UILabel!
