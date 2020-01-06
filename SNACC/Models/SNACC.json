@@ -318,5 +318,140 @@
                 "offerRestriction": ""
             }
         }]
+    },
+    
+    "restaurant8": {
+        "name": "Grace Street Cafe",
+        "category": "Coffee & Tea",
+        "subCategory": "Dessert",
+        "location": {
+            "address": "17 W 32nd St",
+            "borough": "Manhattan",
+            "neighborhood": "Koreatown",
+            "lat": 40.747820,
+            "lon": -73.986510
+        },
+        "restaurantImages": [{
+            "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+            "logo": ""
+        }],
+        "phone": "917-745-2125",
+        "hours": {
+            "monday": "11:00 AM - 11:00 PM",
+            "tuesday": "11:00 AM - 11:00 PM",
+            "wednesday": "11:00 AM - 11:00 PM",
+            "thursday": "11:00 AM - 11:30 PM",
+            "friday": "11:00 AM - 12:30 AM",
+            "saturday": "11:00 AM - 12:30 AM",
+            "sunday": "11:00 AM - 11:00 PM"
+        },
+        "offers": [{
+            "offer1": {
+                "offerTitle": "",
+                "offerImage": "grace street cafe",
+                "startDate": "",
+                "endDate": "",
+                "offerDescription": "",
+                "offerRestriction": ""
+            },
+            "offer2": {
+                "offerTitle": "",
+                "offerImage": "",
+                "startDate": "",
+                "endDate": "",
+                "offerDescription": "",
+                "offerRestriction": ""
+            }
+        }]
+    },
+    
+    "restaurant9": {
+        "name": "Supermoon Bakehouse",
+        "category": "Bakery",
+        "subCategory": "",
+        "location": {
+            "address": "120 Rivington St",
+            "borough": "Manhattan",
+            "neighborhood": "Lower East Side",
+            "lat": 40.719820,
+            "lon": -73.987200
+        },
+        "restaurantImages": [{
+            "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+            "logo": ""
+        }],
+        "phone": "",
+        "hours": {
+            "monday": "8:00 AM - 10:00 PM",
+            "tuesday": "8:00 AM - 10:00 PM",
+            "wednesday": "8:00 AM - 10:00 PM",
+            "thursday": "8:00 AM - 10:00 PM",
+            "friday": "8:00 AM - 11:00 PM",
+            "saturday": "9:00 AM – 11:00 PM",
+            "sunday": "9:00 AM – 10:00 PM"
+        },
+        "offers": [{
+            "offer1": {
+                "offerTitle": "10% off NEW Croissant",
+                "offerImage": "supermoon bakehouse",
+                "startDate": "1/8",
+                "endDate": "1/16",
+                "offerDescription": "Stop by and try our new yuzu croissant with 10% off your purchase",
+                "offerRestriction": "Discount is limited one per customer"
+            },
+            "offer2": {
+                "offerTitle": "",
+                "offerImage": "supermoon bakehouse",
+                "startDate": "",
+                "endDate": "",
+                "offerDescription": "",
+                "offerRestriction": ""
+            }
+        }]
+    },
+    
+    "restaurant10": {
+        "name": "Spot Dessert Bar",
+        "category": "Dessert",
+        "subCategory": "Coffee & Tea",
+        "location": {
+            "address": "13 St Marks Pl",
+            "borough": "Manhattan",
+            "neighborhood": "St Marks",
+            "lat": 40.729410,
+            "lon": -73.988890
+        },
+        "restaurantImages": [{
+            "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
+            "logo": ""
+        }],
+        "phone": "",
+        "hours": {
+            "monday": "12:00 PM - 12:00 AM",
+            "tuesday": "12:00 PM - 12:00 AM",
+            "wednesday": "12:00 PM - 12:00 AM",
+            "thursday": "12:00 PM - 1:00 AM",
+            "friday": "12:00 PM - 1:00 AM",
+            "saturday": "12:00 PM - 1:00 AM",
+            "sunday": "12:00 PM - 12:00 AM"
+        },
+        "offers": [{
+            "offer1": {
+                "offerTitle": "Free Dessert with $50 Spend",
+                "offerImage": "spot dessert bar",
+                "startDate": "1/15",
+                "endDate": "1/25",
+                "offerDescription": "Stop by with your friends and enjoy a dessert on us when you spend $50 or more.",
+                "offerRestriction": "Only available for dine in. Cannot be combined with any other offers"
+            },
+            "offer2": {
+                "offerTitle": "",
+                "offerImage": "spot dessert bar",
+                "startDate": "",
+                "endDate": "",
+                "offerDescription": "",
+                "offerRestriction": ""
+            }
+        }]
     }
 }

@@ -10,10 +10,10 @@ import Foundation
 
 struct Restaurants: Codable {
     let restaurant1, restaurant2, restaurant3, restaurant4: Restaurant
-    let restaurant5, restaurant6, restaurant7: Restaurant
+    let restaurant5, restaurant6, restaurant7, restaurant8, restaurant9, restaurant10: Restaurant
     
     var allRest: [Restaurant] { return
-        [restaurant1, restaurant2, restaurant3, restaurant4, restaurant5, restaurant6, restaurant7]
+        [restaurant1, restaurant2, restaurant3, restaurant4, restaurant5, restaurant6, restaurant7, restaurant8, restaurant9, restaurant10]
     }
     
 }
