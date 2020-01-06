@@ -10,9 +10,12 @@ import Foundation
 
 struct Restaurants: Codable {
     let restaurant1, restaurant2, restaurant3, restaurant4: Restaurant
-    let restaurant5, restaurant7, restaurant8: Restaurant
+    let restaurant5, restaurant6, restaurant7: Restaurant
     
-    var allRest: [Restaurant] { return [restaurant1, restaurant2, restaurant3, restaurant4, restaurant5, restaurant7, restaurant8] }
+    var allRest: [Restaurant] { return
+        [restaurant1, restaurant2, restaurant3, restaurant4, restaurant5, restaurant6, restaurant7]
+    }
+    
 }
 
 struct Restaurant: Codable {
@@ -21,7 +24,7 @@ struct Restaurant: Codable {
     let restaurantImages: [RestaurantImage]
     let phone: String
     let hours: Hours
-    let offers: [OfferElement]
+    var offers: [AllOffers]
 }
 
 
@@ -37,13 +40,13 @@ struct Location: Codable {
 }
 
 
-struct OfferElement: Codable {
+struct AllOffers: Codable {
     let offer1, offer2: OfferClass
 }
 
 
 struct OfferClass: Codable {
-    let offerTitle, startDate, endDate, offerDescription: String
+    let offerTitle, offerImage, startDate, endDate, offerDescription: String
     let offerRestriction: String
 }
 

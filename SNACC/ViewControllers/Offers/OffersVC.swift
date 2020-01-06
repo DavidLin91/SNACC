@@ -11,9 +11,11 @@ import UIKit
 class OffersVC: UIViewController {
     @IBOutlet weak var offersTableView: UITableView!
     
-    var allOffer = [AllOffersBrain]() {
+    var allOffers = [Restaurant]() {
         didSet {
-            offersTableView.reloadData()
+            DispatchQueue.main.async {
+                self.offersTableView.reloadData()
+            }
         }
     }
     
@@ -26,7 +28,14 @@ class OffersVC: UIViewController {
     }
     
     func loadData() {
-        allOffer = AllOffersBrain.allOffers
+        RestaurantsAPIClient.getRestaurants { (result) in
+            switch result {
+            case .failure:
+                break
+            case .success(let data):
+                self.allOffers = data.allRest
+            }
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -35,7 +44,7 @@ class OffersVC: UIViewController {
                 fatalError()
         }
         
-        let offer = allOffer[indexPath.row]
+        let offer = allOffers[indexPath.row]
         offersVC.offersDetail = offer
     }
     
@@ -43,14 +52,14 @@ class OffersVC: UIViewController {
 }
 extension OffersVC: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return allOffer.count
+        return allOffers.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "offersCell", for: indexPath) as? OffersCell else {
             fatalError()
         }
-        let offer = allOffer[indexPath.row]
-        cell.configureCell(offer: offer)
+        let offer = allOffers[indexPath.row]
+        cell.configureCell(restaurant: offer)
         return cell
     }
 }

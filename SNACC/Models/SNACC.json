@@ -26,15 +26,17 @@
         },
         "offers": [{
             "offer1": {
-                "offerTitle": "",
-                "startDate": "",
-                "endDate": "",
-                "offerDescription": "",
-                "offerRestriction": ""
+                "offerTitle": "10% Off Pastries Before 10AM",
+                "offerImage": "chansontn",
+                "startDate": "1/7",
+                "endDate": "1/15",
+                "offerDescription": "Early birds get an additional 10% off ALL pastries before 10AM",
+                "offerRestriction": "Cannot be combined with other offers"
             },
 
             "offer2": {
                 "offerTitle": "",
+                "offerImage": "chansontn",
                 "startDate": "",
                 "endDate": "",
                 "offerDescription": "",
@@ -70,15 +72,17 @@
         },
         "offers": [{
             "offer1": {
-                "offerTitle": "",
-                "startDate": "",
-                "endDate": "",
-                "offerDescription": "",
-                "offerRestriction": ""
+                "offerTitle": "Free Topping",
+                "offerImage": "softswervetn",
+                "startDate": "1/12",
+                "endDate": "1/29",
+                "offerDescription": "Free topping on any order when you follow us on Instagram @softswerveny. Please present your Instagram to the cashier",
+                "offerRestriction": "Limited one free topping per follow"
             },
 
             "offer2": {
                 "offerTitle": "",
+                "offerImage": "softswervetn",
                 "startDate": "",
                 "endDate": "",
                 "offerDescription": "",
@@ -114,15 +118,17 @@
         },
         "offers": [{
             "offer1": {
-                "offerTitle": "",
-                "startDate": "",
-                "endDate": "",
-                "offerDescription": "",
-                "offerRestriction": ""
+                "offerTitle": "5 mochi donuts for $20",
+                "offerImage": "alimamatn",
+                "startDate": "1/15",
+                "endDate": "1/25",
+                "offerDescription": "Stop by today and share the love. Purchase five mochi donuts for $20",
+                "offerRestriction": "Tax is not included. Limited 2 per person"
             },
 
             "offer2": {
                 "offerTitle": "",
+                "offerImage": "alimamatn",
                 "startDate": "",
                 "endDate": "",
                 "offerDescription": "",
@@ -158,15 +164,17 @@
         },
         "offers": [{
             "offer1": {
-                "offerTitle": "",
-                "startDate": "",
-                "endDate": "",
-                "offerDescription": "",
-                "offerRestriction": ""
+                "offerTitle": "Free Hot Chocolate Upgrade",
+                "offerImage": "milk & cream cereal bar",
+                "startDate": "1/12",
+                "endDate": "1/29",
+                "offerDescription": "Stop by and warm up with our delicious hot chocolate - topped with marshmallows and your favorite cereal! We will be offering FREE upgrades from M to L",
+                "offerRestriction": " Cannot be combined with other offers"
             },
 
             "offer2": {
                 "offerTitle": "",
+                "offerImage": "milk & cream cereal bar",
                 "startDate": "",
                 "endDate": "",
                 "offerDescription": "",
@@ -202,15 +210,17 @@
         },
         "offers": [{
             "offer1": {
-                "offerTitle": "",
-                "startDate": "",
-                "endDate": "",
-                "offerDescription": "",
+                "offerTitle": "Unlimited Toppings on all large shaved ices",
+                "offerImage": "snowdaystn",
+                "startDate": "1/24",
+                "endDate": "1/26",
+                "offerDescription": "Stop by on the weekend of 1/24 - 1/26 and order unlimited toppings on ALL large shaved ice orders!",
                 "offerRestriction": ""
             },
 
             "offer2": {
                 "offerTitle": "",
+                "offerImage": "snowdaystn",
                 "startDate": "",
                 "endDate": "",
                 "offerDescription": "",
@@ -246,15 +256,17 @@
         },
         "offers": [{
             "offer1": {
-                "offerTitle": "",
-                "startDate": "",
-                "endDate": "",
-                "offerDescription": "",
-                "offerRestriction": ""
+                "offerTitle": "Buy 2 Get 1 Free",
+                "offerImage": "vivitn",
+                "startDate": "1/7",
+                "endDate": "1/31",
+                "offerDescription": "Come in anytime till the end of January for our buy 2 get 1 free special! This offer applies to all drinks (free drink will be of the lesser value)",
+                "offerRestriction": "Cannot be combined with other offers"
             },
 
             "offer2": {
                 "offerTitle": "",
+                "offerImage": "vivitn",
                 "startDate": "",
                 "endDate": "",
                 "offerDescription": "",
@@ -290,14 +302,16 @@
         },
         "offers": [{
             "offer1": {
-                "offerTitle": "",
-                "startDate": "",
-                "endDate": "",
-                "offerDescription": "",
-                "offerRestriction": ""
+                "offerTitle": "Unlimited toppings on Eggloo Cones",
+                "offerImage": "eggloo",
+                "startDate": "1/8",
+                "endDate": "1/16",
+                "offerDescription": "Purchase any Eggloo cones and receive unlimited toppings!",
+                "offerRestriction": "Cannot be combined with other offers"
             },
             "offer2": {
                 "offerTitle": "",
+                "offerImage": "eggloo",
                 "startDate": "",
                 "endDate": "",
                 "offerDescription": "",

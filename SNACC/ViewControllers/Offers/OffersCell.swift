@@ -10,15 +10,15 @@ import UIKit
 
 class OffersCell: UITableViewCell {
     
-    
     @IBOutlet weak var offerImage: UIImageView!
     @IBOutlet weak var restaurantName: UILabel!
     @IBOutlet weak var offerDescription: UILabel!
     
-    func configureCell (offer: AllOffersBrain) {
-        offerImage.image = UIImage(named: offer.restaurantImage)
-        restaurantName.text = offer.restaurantName
-        offerDescription.text = offer.description
+    func configureCell (restaurant: Restaurant) {
+        offerImage.image = UIImage(named: "\(restaurant.offers[0].offer1.offerImage.lowercased())")
+        restaurantName.text = restaurant.name
+        offerDescription.text = restaurant.offers[0].offer1.offerDescription.description
+        self.offerImage.layer.cornerRadius = 5.0
     }
 
 }

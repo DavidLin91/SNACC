@@ -18,7 +18,7 @@ class RestaurantCell: UITableViewCell {
     
     func configureCell( for restaurant: Restaurant) {
         restaurantImage.image = UIImage(named: "\(restaurant.name.lowercased())")
-        restaurantName.text = restaurant.name.uppercased()
+        restaurantName.text = restaurant.name
         restaurantCategory.text = "\(restaurant.category), \(restaurant.subCategory)"
         restaurantLocation.text = "\(restaurant.location.borough), \(restaurant.location.neighborhood)"
         restaurantLocation.textColor = UIColor.gray
