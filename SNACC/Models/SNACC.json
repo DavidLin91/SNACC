@@ -220,50 +220,6 @@
     },
 
     "restaurant6": {
-        "name": "Snowdays",
-        "category": "Dessert",
-        "subCategory": "Shaved Ice",
-        "location": {
-            "address": "241 E 10th St",
-            "borough": "Manhattan",
-            "neighborhood": "East Village",
-            "lat": 40.729010,
-            "lon": -73.984700
-        },
-        "restaurantImages": [{
-            "stock": "https://eatmagazine.ca/wp-content/uploads/2012/03/DSC0336211.jpg",
-            "logo": ""
-        }],
-        "phone": "",
-        "hours": {
-            "monday": "5:00 PM - 10:00 PM",
-            "tuesday": "2:00 PM – 10:00 PM",
-            "wednesday": "2:00 PM – 10:00 PM",
-            "thursday": "2:00 PM – 10:00 PM",
-            "friday": "2:00 PM – 11:00 PM",
-            "saturday": "12:00 PM – 11:00 PM",
-            "sunday": "12:00 PM – 10:00 PM"
-        },
-        "offers": [{
-            "offer1": {
-                "offerTitle": "",
-                "startDate": "",
-                "endDate": "",
-                "offerDescription": "",
-                "offerRestriction": ""
-            },
-
-            "offer2": {
-                "offerTitle": "",
-                "startDate": "",
-                "endDate": "",
-                "offerDescription": "",
-                "offerRestriction": ""
-            }
-        }]
-    },
-
-    "restaurant7": {
         "name": "Vivi Bubble Tea",
         "category": "Dessert",
         "subCategory": "Bubble Tea",
@@ -307,7 +263,7 @@
         }]
     },
 
-    "restaurant8": {
+    "restaurant7": {
         "name": "Eggloo",
         "category": "Dessert",
         "subCategory": "Ice Cream",

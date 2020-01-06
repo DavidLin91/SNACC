@@ -45,7 +45,7 @@ class LoyaltyCardVC: UIViewController {
         super.viewDidLoad()
         
         restaurantName.text = allRestaurants?.name.uppercased()
-       // companyLogo.image = UIImage(named: allRestaurants?.restLogo ?? "")
+        companyLogo.image = UIImage(named: "\(allRestaurants?.name.lowercased() ?? "")logo")
         
     }
     

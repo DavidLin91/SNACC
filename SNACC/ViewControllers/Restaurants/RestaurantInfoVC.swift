@@ -38,11 +38,18 @@ class RestaurantInfoVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // unsure how to access "allRest"
-        
-       // restaurantStockPhoto.image = UIImage(named: allrestaurant?.restaurantStockPhoto ?? "alimama")
+        restaurantStockPhoto.image = UIImage(named: allrestaurant?.name.lowercased() ?? "")
         restaurantNameLabel.text = allrestaurant?.name.uppercased()
-        storeHoursLabel.text = allrestaurant?.hours.monday
+        storeHoursLabel.text = """
+        Hours:
+        Monday      \(allrestaurant?.hours.monday ?? "")
+        Tuesday     \(allrestaurant?.hours.tuesday ?? "")
+        Wednesday   \(allrestaurant?.hours.wednesday ?? "")
+        Thursday    \(allrestaurant?.hours.thursday ?? "")
+        Friday      \(allrestaurant?.hours.friday ?? "")
+        Saturday    \(allrestaurant?.hours.saturday ?? "")
+        Sunday      \(allrestaurant?.hours.sunday ?? "")
+        """
         addressLabel.text = "\(allrestaurant?.location.address ?? "N/A"), \(allrestaurant?.location.borough ?? "")"
         restaurantNumberLabel.text = allrestaurant?.phone
         offersButton.setTitle(" OFFERS ", for: .normal)
