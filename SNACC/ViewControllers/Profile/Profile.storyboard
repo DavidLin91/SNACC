@@ -10,7 +10,7 @@
         <!--ProfileVC-->
         <scene sceneID="Oq4-Q4-Rlv">
             <objects>
-                <viewController id="wr0-aS-6FS" customClass="ProfileVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profileVC" id="wr0-aS-6FS" customClass="ProfileVC" customModule="SNACC" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TxC-0N-yEJ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -27,7 +27,7 @@ struct RestaurantsAPIClient {
                 completion(.failure(.networkClientError(appError)))
             case .success(let data):
                 // debugging (helps check json data)
-                let printData = String(data: data, encoding: .utf8)
+               // let printData = String(data: data, encoding: .utf8)
                 do{
                     let restaurantData = try JSONDecoder().decode(Restaurants.self, from: data)
                     print(restaurantData)

@@ -11,10 +11,19 @@ import UIKit
 class SplashVC: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var logInButton: UIButton!
+
+    
+    override func viewDidLayoutSubviews() {
+        signUpButton.layer.cornerRadius = 5.0
+        logInButton.layer.cornerRadius = 5.0
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
+
+    
 
 }

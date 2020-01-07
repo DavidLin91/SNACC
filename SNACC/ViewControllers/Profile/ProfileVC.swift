@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileVC: UIViewController {
     @IBOutlet weak var profilePicture: UIImageView!
@@ -27,12 +28,23 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func logoutButton(_ sender: UIButton) {
+        do{
+            try Auth.auth().signOut()
+            self.presentSplashVC()
+        }catch{
+            print("Error while signing out!")
+        }
         
     }
     
-    
-    
-    
-    
+}
+
+extension UIViewController {
+    func presentSplashVC() {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Login", bundle:nil)
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "splashVC") as! SplashVC
+        self.present(nextViewController, animated:true, completion:nil)
+
+    }
 }
 
