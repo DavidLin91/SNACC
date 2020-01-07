@@ -30,7 +30,7 @@ class ProfileVC: UIViewController {
     @IBAction func logoutButton(_ sender: UIButton) {
         do{
             try Auth.auth().signOut()
-            self.presentSplashVC()
+            presentSplashVC()
         }catch{
             print("Error while signing out!")
         }
@@ -43,8 +43,10 @@ extension UIViewController {
     func presentSplashVC() {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Login", bundle:nil)
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "splashVC") as! SplashVC
+        
+        // is this fix correct?
+        nextViewController.modalPresentationStyle = .fullScreen
         self.present(nextViewController, animated:true, completion:nil)
-
     }
 }
 

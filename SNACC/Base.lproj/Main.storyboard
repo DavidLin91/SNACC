@@ -9,7 +9,7 @@
         <!--Restaurants-->
         <scene sceneID="MNz-jH-hPd">
             <objects>
-                <viewControllerPlaceholder storyboardName="Restaurants" id="rTb-Vf-Pq2" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardIdentifier="res" storyboardName="Restaurants" id="rTb-Vf-Pq2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="R1z-PK-7ZP"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9iH-ZO-6GD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

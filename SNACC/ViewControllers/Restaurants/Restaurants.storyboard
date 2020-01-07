@@ -748,13 +748,6 @@
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Cdd-eG-Jeb">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                             </mapView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mapPin" translatesAutoresizingMaskIntoConstraints="NO" id="3WC-ma-st0">
-                                <rect key="frame" x="167.66666666666666" y="322" width="40" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="AJz-7U-Hbr"/>
-                                    <constraint firstAttribute="width" constant="40" id="POi-8g-158"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQ0-6k-d63">
                                 <rect key="frame" x="0.0" y="591" width="375" height="50"/>
                                 <color key="backgroundColor" red="0.945867703" green="0.945867703" blue="0.945867703" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -771,8 +764,6 @@
                             <constraint firstItem="lQ0-6k-d63" firstAttribute="leading" secondItem="L4N-XN-Y0k" secondAttribute="leading" id="1Zb-pD-InS"/>
                             <constraint firstItem="L4N-XN-Y0k" firstAttribute="trailing" secondItem="lQ0-6k-d63" secondAttribute="trailing" id="2U9-sl-jiF"/>
                             <constraint firstItem="Cdd-eG-Jeb" firstAttribute="leading" secondItem="L4N-XN-Y0k" secondAttribute="leading" id="EO1-t2-6XQ"/>
-                            <constraint firstItem="3WC-ma-st0" firstAttribute="centerX" secondItem="cxD-Wg-4ET" secondAttribute="centerX" id="Ena-1k-gUq"/>
-                            <constraint firstItem="3WC-ma-st0" firstAttribute="centerY" secondItem="cxD-Wg-4ET" secondAttribute="centerY" constant="-20" id="Eqq-G1-E6a"/>
                             <constraint firstItem="Cdd-eG-Jeb" firstAttribute="bottom" secondItem="L4N-XN-Y0k" secondAttribute="bottom" id="N8H-xu-FEB"/>
                             <constraint firstItem="lQ0-6k-d63" firstAttribute="bottom" secondItem="L4N-XN-Y0k" secondAttribute="bottom" id="SmJ-ry-zBr"/>
                             <constraint firstItem="Cdd-eG-Jeb" firstAttribute="top" secondItem="L4N-XN-Y0k" secondAttribute="top" id="aN7-4k-7i2"/>
@@ -804,7 +795,6 @@
         <image name="bookmark" catalog="system" width="56" height="64"/>
         <image name="globe" catalog="system" width="64" height="60"/>
         <image name="map" catalog="system" width="64" height="56"/>
-        <image name="mapPin" width="200" height="200"/>
         <image name="person.crop.square.fill" catalog="system" width="64" height="56"/>
         <image name="phone" catalog="system" width="64" height="56"/>
     </resources>

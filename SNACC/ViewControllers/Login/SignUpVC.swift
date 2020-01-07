@@ -87,15 +87,14 @@ class SignUpVC: UIViewController {
                     db.collection("users").addDocument(data: ["firstname": firstName,"lastname": lastName, "uid": result!.user.uid]) { (error) in
                         
                         
-//                        if error != nil {
-//                            // Show error message
-//                            self.showError("Error saving user data")
-//                            
-//                        }
+                        if error != nil {
+                            // Show error message
+                            self.showError("Error saving user data")
+                            
+                        }
                     }
                     // transition to the home screen
                     self.transitionToHome()
-                    
                 }
                 
             }
@@ -112,13 +111,13 @@ class SignUpVC: UIViewController {
     
     func transitionToHome() {
         
-        let viewController:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC") as UIViewController
+        let _:UIViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "mainVC") as UIViewController
         
         
-//        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? RestaurantVC
-//
-//        view.window?.rootViewController = homeViewController
-//        view.window?.makeKeyAndVisible()
+        //        let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? RestaurantVC
+        //
+        //        view.window?.rootViewController = homeViewController
+        //        view.window?.makeKeyAndVisible()
         
     }
     

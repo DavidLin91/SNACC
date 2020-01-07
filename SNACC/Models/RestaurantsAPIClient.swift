@@ -30,7 +30,6 @@ struct RestaurantsAPIClient {
                // let printData = String(data: data, encoding: .utf8)
                 do{
                     let restaurantData = try JSONDecoder().decode(Restaurants.self, from: data)
-                    print(restaurantData)
                     completion(.success(restaurantData))
                 } catch {
                     print(error)
