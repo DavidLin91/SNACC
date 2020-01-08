@@ -18,7 +18,9 @@ class SignUpVC: UIViewController {
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var errorLabel: UILabel!
     
-    
+    override func viewDidLayoutSubviews() {
+        signUpButton.layer.cornerRadius = 5.0
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

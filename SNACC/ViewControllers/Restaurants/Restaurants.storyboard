@@ -91,10 +91,6 @@
                                 <color key="tintColor" red="0.90229089340000002" green="0.90229089340000002" blue="0.90229089340000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <scopeButtonTitles>
-                                    <string>name</string>
-                                    <string>description</string>
-                                </scopeButtonTitles>
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -772,17 +768,17 @@
                         <viewLayoutGuide key="safeArea" id="L4N-XN-Y0k"/>
                     </view>
                     <navigationItem key="navigationItem" id="Qmj-uo-fum">
-                        <barButtonItem key="rightBarButtonItem" title="Get Directions" id="Dcy-8n-CFv">
+                        <barButtonItem key="rightBarButtonItem" title="Open Maps" id="Dcy-8n-CFv">
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <connections>
-                                <action selector="getDirectonsButtonPressed:" destination="UPt-wH-TpP" id="A5M-Vo-eiM"/>
+                                <action selector="openMapsButtonClicked:" destination="UPt-wH-TpP" id="zXc-uQ-Upd"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="addressLabel" destination="lQ0-6k-d63" id="1CL-26-Rwe"/>
-                        <outlet property="getDirectionsButton" destination="Dcy-8n-CFv" id="4bn-11-tzH"/>
                         <outlet property="mapView" destination="Cdd-eG-Jeb" id="AhJ-Vo-lo2"/>
+                        <outlet property="openMapsButton" destination="Dcy-8n-CFv" id="4bn-11-tzH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gGf-4J-C1J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
