@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6335745423C5888F008C9935 /* RestaurantOffersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335745323C5888F008C9935 /* RestaurantOffersVC.swift */; };
+		6335745623C67A5D008C9935 /* Restaurants2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6335745523C67A5C008C9935 /* Restaurants2.swift */; };
 		633E2A2C23B164C300B5AD7D /* LearnMore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E2A2B23B164C300B5AD7D /* LearnMore.swift */; };
 		633E2A2E23B164E300B5AD7D /* ClaimOffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E2A2D23B164E300B5AD7D /* ClaimOffer.swift */; };
 		633E2A3023B169F500B5AD7D /* Restaurants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633E2A2F23B169F500B5AD7D /* Restaurants.swift */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		0E32AFB6568E03CF24519F7D /* Pods-SNACC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SNACC.debug.xcconfig"; path = "Target Support Files/Pods-SNACC/Pods-SNACC.debug.xcconfig"; sourceTree = "<group>"; };
 		31E173FF2847BE5B4302D136 /* Pods_SNACC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SNACC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6335745323C5888F008C9935 /* RestaurantOffersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantOffersVC.swift; sourceTree = "<group>"; };
+		6335745523C67A5C008C9935 /* Restaurants2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants2.swift; sourceTree = "<group>"; };
 		633E2A2B23B164C300B5AD7D /* LearnMore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnMore.swift; sourceTree = "<group>"; };
 		633E2A2D23B164E300B5AD7D /* ClaimOffer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClaimOffer.swift; sourceTree = "<group>"; };
 		633E2A2F23B169F500B5AD7D /* Restaurants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaurants.swift; sourceTree = "<group>"; };
@@ -222,6 +226,7 @@
 				633E2A2B23B164C300B5AD7D /* LearnMore.swift */,
 				633E2A2D23B164E300B5AD7D /* ClaimOffer.swift */,
 				63619E1D23987DBF007284E0 /* MapScreenVC.swift */,
+				6335745323C5888F008C9935 /* RestaurantOffersVC.swift */,
 				63452B7E23B469BC0022845F /* ClaimCell.swift */,
 			);
 			path = Restaurants;
@@ -240,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				633E2A2F23B169F500B5AD7D /* Restaurants.swift */,
+				6335745523C67A5C008C9935 /* Restaurants2.swift */,
 				639FC05B23BBF56B00B6013F /* RestaurantsAPIClient.swift */,
 				639FC08D23C0FED100B6013F /* SNACC.json */,
 			);
@@ -387,6 +393,7 @@
 				6344494C23898E8400C7FF99 /* OffersVC.swift in Sources */,
 				639FC05823BAF6EA00B6013F /* Constants.swift in Sources */,
 				634449562389B20B00C7FF99 /* OffersDetailVC.swift in Sources */,
+				6335745623C67A5D008C9935 /* Restaurants2.swift in Sources */,
 				633E2A2E23B164E300B5AD7D /* ClaimOffer.swift in Sources */,
 				639FC05C23BBF56B00B6013F /* RestaurantsAPIClient.swift in Sources */,
 				6344493823898DA700C7FF99 /* SceneDelegate.swift in Sources */,
@@ -404,6 +411,7 @@
 				634B518D23B8681E0087697F /* SignUpVC.swift in Sources */,
 				63DE9D0023B06B2A0032A666 /* BookmarkVC.swift in Sources */,
 				634B518723B866870087697F /* SplashVC.swift in Sources */,
+				6335745423C5888F008C9935 /* RestaurantOffersVC.swift in Sources */,
 				63452B7F23B469BC0022845F /* ClaimCell.swift in Sources */,
 				634B518923B867290087697F /* LoginVC.swift in Sources */,
 				634449612389DA6100C7FF99 /* RestaurantVC.swift in Sources */,

@@ -54,12 +54,7 @@ class LoginVC: UIViewController {
                 vc.modalPresentationStyle = .fullScreen
                 self.present(vc, animated: true, completion: nil)
 
-                
-                
-//                let homeViewController = self.storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewController) as? RestaurantVC
-//
-//                self.view.window?.rootViewController = homeViewController
-//                self.view.window?.makeKeyAndVisible()
+
                 
             }
         }

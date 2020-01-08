@@ -59,6 +59,7 @@ extension OffersVC: UITableViewDataSource {
             fatalError()
         }
         let offer = allOffers[indexPath.row]
+        
         cell.configureCell(restaurant: offer)
         return cell
     }

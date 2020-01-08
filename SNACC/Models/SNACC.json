@@ -24,8 +24,8 @@
             "saturday": "9:00 AM – 5:00 PM",
             "sunday": "10:00 AM – 5:00 PM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+            {
                 "offerTitle": "10% Off Pastries Before 10AM",
                 "offerImage": "chansontn",
                 "startDate": "1/7",
@@ -34,7 +34,7 @@
                 "offerRestriction": "Cannot be combined with other offers"
             },
 
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "chansontn",
                 "startDate": "",
@@ -42,7 +42,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     },
 
     "restaurant2": {
@@ -70,8 +70,8 @@
             "saturday": "12:00 PM – 11:00 PM",
             "sunday": "12:00 PM – 10:00 PM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+             {
                 "offerTitle": "Free Topping",
                 "offerImage": "softswervetn",
                 "startDate": "1/12",
@@ -80,7 +80,7 @@
                 "offerRestriction": "Limited one free topping per follow"
             },
 
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "softswervetn",
                 "startDate": "",
@@ -88,7 +88,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     },
 
     "restaurant3": {
@@ -116,8 +116,8 @@
             "saturday": "11:00 AM – 10:00 PM",
             "sunday": "11:00 AM – 9:00 PM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+            {
                 "offerTitle": "5 mochi donuts for $20",
                 "offerImage": "alimamatn",
                 "startDate": "1/15",
@@ -126,7 +126,7 @@
                 "offerRestriction": "Tax is not included. Limited 2 per person"
             },
 
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "alimamatn",
                 "startDate": "",
@@ -134,7 +134,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     },
 
     "restaurant4": {
@@ -162,8 +162,8 @@
             "saturday": "12:00 PM – 11:00 PM",
             "sunday": "12:00 PM – 10:00 PM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+            {
                 "offerTitle": "Free Hot Chocolate Upgrade",
                 "offerImage": "milk & cream cereal bar",
                 "startDate": "1/12",
@@ -172,7 +172,7 @@
                 "offerRestriction": " Cannot be combined with other offers"
             },
 
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "milk & cream cereal bar",
                 "startDate": "",
@@ -180,7 +180,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     },
 
     "restaurant5": {
@@ -208,8 +208,8 @@
             "saturday": "12:00 PM – 11:00 PM",
             "sunday": "12:00 PM – 10:00 PM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+            {
                 "offerTitle": "Unlimited Toppings on all large shaved ices",
                 "offerImage": "snowdaystn",
                 "startDate": "1/24",
@@ -218,7 +218,7 @@
                 "offerRestriction": ""
             },
 
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "snowdaystn",
                 "startDate": "",
@@ -226,7 +226,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     },
 
     "restaurant6": {
@@ -254,8 +254,8 @@
             "saturday": "12:00 PM – 11:00 PM",
             "sunday": "12:00 PM – 10:00 PM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+            {
                 "offerTitle": "Buy 2 Get 1 Free",
                 "offerImage": "vivitn",
                 "startDate": "1/7",
@@ -264,7 +264,7 @@
                 "offerRestriction": "Cannot be combined with other offers"
             },
 
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "vivitn",
                 "startDate": "",
@@ -272,7 +272,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     },
 
     "restaurant7": {
@@ -300,8 +300,8 @@
             "saturday": "12:00 PM – 11:00 PM",
             "sunday": "12:00 PM – 10:00 PM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+            {
                 "offerTitle": "Unlimited toppings on Eggloo Cones",
                 "offerImage": "eggloo",
                 "startDate": "1/8",
@@ -309,7 +309,7 @@
                 "offerDescription": "Purchase any Eggloo cones and receive unlimited toppings!",
                 "offerRestriction": "Cannot be combined with other offers"
             },
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "eggloo",
                 "startDate": "",
@@ -317,7 +317,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     },
     
     "restaurant8": {
@@ -345,8 +345,8 @@
             "saturday": "11:00 AM - 12:30 AM",
             "sunday": "11:00 AM - 11:00 PM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+            {
                 "offerTitle": "",
                 "offerImage": "grace street cafe",
                 "startDate": "",
@@ -354,7 +354,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             },
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "",
                 "startDate": "",
@@ -362,7 +362,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     },
     
     "restaurant9": {
@@ -390,8 +390,8 @@
             "saturday": "9:00 AM – 11:00 PM",
             "sunday": "9:00 AM – 10:00 PM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+            {
                 "offerTitle": "10% off NEW Croissant",
                 "offerImage": "supermoon bakehouse",
                 "startDate": "1/8",
@@ -399,7 +399,7 @@
                 "offerDescription": "Stop by and try our new yuzu croissant with 10% off your purchase",
                 "offerRestriction": "Discount is limited one per customer"
             },
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "supermoon bakehouse",
                 "startDate": "",
@@ -407,7 +407,7 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     },
     
     "restaurant10": {
@@ -435,8 +435,8 @@
             "saturday": "12:00 PM - 1:00 AM",
             "sunday": "12:00 PM - 12:00 AM"
         },
-        "offers": [{
-            "offer1": {
+        "offers": [
+            {
                 "offerTitle": "Free Dessert with $50 Spend",
                 "offerImage": "spot dessert bar",
                 "startDate": "1/15",
@@ -444,7 +444,7 @@
                 "offerDescription": "Stop by with your friends and enjoy a dessert on us when you spend $50 or more.",
                 "offerRestriction": "Only available for dine in. Cannot be combined with any other offers"
             },
-            "offer2": {
+            {
                 "offerTitle": "",
                 "offerImage": "spot dessert bar",
                 "startDate": "",
@@ -452,6 +452,6 @@
                 "offerDescription": "",
                 "offerRestriction": ""
             }
-        }]
+        ]
     }
 }

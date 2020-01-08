@@ -41,7 +41,8 @@ struct Location: Codable {
 
 
 struct AllOffers: Codable {
-    let offer1, offer2: OfferClass
+    let offerTitle, offerImage, startDate, endDate: String
+    let offerDescription, offerRestriction: String
 }
 
 

@@ -15,9 +15,10 @@ class OffersCell: UITableViewCell {
     @IBOutlet weak var offerDescription: UILabel!
     
     func configureCell (restaurant: Restaurant) {
-        offerImage.image = UIImage(named: "\(restaurant.offers[0].offer1.offerImage.lowercased())")
+        // guard against empty..
+        offerImage.image = UIImage(named: "\(restaurant.offers.first!.offerImage.lowercased())")
         restaurantName.text = restaurant.name
-        offerDescription.text = restaurant.offers[0].offer1.offerDescription.description
+        offerDescription.text = restaurant.offers.first?.offerDescription
         self.offerImage.layer.cornerRadius = 5.0
     }
 

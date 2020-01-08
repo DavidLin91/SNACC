@@ -31,12 +31,12 @@ class OffersDetailVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         restaurantName.text = offersDetail?.name.uppercased()
-        offerSubtitle.text = offersDetail?.offers[0].offer1.offerTitle.uppercased()
+        offerSubtitle.text = offersDetail?.offers.first?.offerTitle.uppercased()
         restaurantImage.image = UIImage(named: "\(offersDetail?.name.lowercased() ?? "")" )
-        offerDescription.text = offersDetail?.offers[0].offer1.offerDescription
-        restrictionDescription.text = offersDetail?.offers[0].offer1.offerRestriction
-        startDateLabel.text = "Start Date: \(offersDetail?.offers[0].offer1.startDate ?? "")"
-        endDateLabel.text = "End Date: \(offersDetail?.offers[0].offer1.endDate ?? "")"
+        offerDescription.text =  offersDetail?.offers.first?.offerDescription
+        restrictionDescription.text = offersDetail?.offers.first?.offerRestriction
+        startDateLabel.text = "Start Date: \(offersDetail?.offers.first?.startDate ?? "")"
+        endDateLabel.text = "End Date: \(offersDetail?.offers.first?.endDate ?? "")"
         
         offerDescription.isEditable = false
         offerDescription.isSelectable = false
