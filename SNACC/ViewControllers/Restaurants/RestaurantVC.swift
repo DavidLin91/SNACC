@@ -74,6 +74,14 @@ extension RestaurantVC: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
+    
+    // function part of iOS that dismisses keyboard when you scroll
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+      if searchBar.isFirstResponder {
+        searchBar.resignFirstResponder()
+      }
+    }
+    
 }
 
 extension RestaurantVC: UISearchBarDelegate {
