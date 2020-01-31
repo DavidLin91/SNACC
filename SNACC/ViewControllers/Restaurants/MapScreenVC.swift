@@ -106,9 +106,7 @@ class MapScreenVC: UIViewController {
         let mapItem = MKMapItem(placemark: placemark)
         mapItem.name = "\(self.allRestaurants?.name ?? "")"
         mapItem.openInMaps(launchOptions: options)
-
     }
-    
     
 }
 

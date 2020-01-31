@@ -24,7 +24,6 @@ class ProfileVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        profilePicture.image = UIImage(named: "profilepic")
     }
     
     @IBAction func logoutButton(_ sender: UIButton) {

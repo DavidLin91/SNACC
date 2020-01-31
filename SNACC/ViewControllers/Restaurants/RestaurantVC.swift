@@ -81,7 +81,6 @@ extension RestaurantVC: UITableViewDelegate {
         searchBar.resignFirstResponder()
       }
     }
-    
 }
 
 extension RestaurantVC: UISearchBarDelegate {
