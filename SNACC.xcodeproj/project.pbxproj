@@ -41,6 +41,10 @@
 		639FC05823BAF6EA00B6013F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC05723BAF6EA00B6013F /* Constants.swift */; };
 		639FC05C23BBF56B00B6013F /* RestaurantsAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FC05B23BBF56B00B6013F /* RestaurantsAPIClient.swift */; };
 		639FC08E23C0FED100B6013F /* SNACC.json in Resources */ = {isa = PBXBuildFile; fileRef = 639FC08D23C0FED100B6013F /* SNACC.json */; };
+		63BCF87F23EB01CE006EC326 /* Business.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63BCF87E23EB01CE006EC326 /* Business.storyboard */; };
+		63BCF88123EB0222006EC326 /* BusinessHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCF88023EB0222006EC326 /* BusinessHomeVC.swift */; };
+		63BCF88323EB0233006EC326 /* OffersAndPromosVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCF88223EB0233006EC326 /* OffersAndPromosVC.swift */; };
+		63BCF88523EB0CA6006EC326 /* AddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BCF88423EB0CA6006EC326 /* AddEditVC.swift */; };
 		63DE9CF523AF21490032A666 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */; };
 		63DE9CF723AF21B10032A666 /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF623AF21B10032A666 /* UIViewController+Alerts.swift */; };
 		63DE9CF923AF21D60032A666 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63DE9CF823AF21D60032A666 /* NetworkHelper.swift */; };
@@ -91,6 +95,10 @@
 		639FC05723BAF6EA00B6013F /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		639FC05B23BBF56B00B6013F /* RestaurantsAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsAPIClient.swift; sourceTree = "<group>"; };
 		639FC08D23C0FED100B6013F /* SNACC.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SNACC.json; sourceTree = "<group>"; };
+		63BCF87E23EB01CE006EC326 /* Business.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Business.storyboard; sourceTree = "<group>"; };
+		63BCF88023EB0222006EC326 /* BusinessHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessHomeVC.swift; sourceTree = "<group>"; };
+		63BCF88223EB0233006EC326 /* OffersAndPromosVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffersAndPromosVC.swift; sourceTree = "<group>"; };
+		63BCF88423EB0CA6006EC326 /* AddEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditVC.swift; sourceTree = "<group>"; };
 		63DE9CF423AF21490032A666 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
 		63DE9CF623AF21B10032A666 /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
 		63DE9CF823AF21D60032A666 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
@@ -207,12 +215,24 @@
 		634B519023B917130087697F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				63BCF87D23EB01A9006EC326 /* Business Admin Portal */,
 				634B518523B864B70087697F /* Login */,
 				63DE9CEF23AF202F0032A666 /* Restaurants */,
 				634449592389B37700C7FF99 /* Profile */,
 				634449572389B2FF00C7FF99 /* Offers */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		63BCF87D23EB01A9006EC326 /* Business Admin Portal */ = {
+			isa = PBXGroup;
+			children = (
+				63BCF87E23EB01CE006EC326 /* Business.storyboard */,
+				63BCF88023EB0222006EC326 /* BusinessHomeVC.swift */,
+				63BCF88223EB0233006EC326 /* OffersAndPromosVC.swift */,
+				63BCF88423EB0CA6006EC326 /* AddEditVC.swift */,
+			);
+			path = "Business Admin Portal";
 			sourceTree = "<group>";
 		};
 		63DE9CEF23AF202F0032A666 /* Restaurants */ = {
@@ -325,6 +345,7 @@
 			files = (
 				6344494423898DAA00C7FF99 /* LaunchScreen.storyboard in Resources */,
 				633E2A3223B1902A00B5AD7D /* GoogleService-Info.plist in Resources */,
+				63BCF87F23EB01CE006EC326 /* Business.storyboard in Resources */,
 				6344494123898DAA00C7FF99 /* Assets.xcassets in Resources */,
 				634B518423B702110087697F /* Login.storyboard in Resources */,
 				639FC08E23C0FED100B6013F /* SNACC.json in Resources */,
@@ -387,6 +408,7 @@
 				634B518B23B8673C0087697F /* RecoverPasswordVC.swift in Sources */,
 				6344493C23898DA700C7FF99 /* ProfileVC.swift in Sources */,
 				63DE9CF523AF21490032A666 /* UIImageView+Extension.swift in Sources */,
+				63BCF88323EB0233006EC326 /* OffersAndPromosVC.swift in Sources */,
 				6344493623898DA700C7FF99 /* AppDelegate.swift in Sources */,
 				639FC05623BAEA6B00B6013F /* Utilities.swift in Sources */,
 				63DE9CFC23AF22030032A666 /* AppError.swift in Sources */,
@@ -397,6 +419,7 @@
 				633E2A2E23B164E300B5AD7D /* ClaimOffer.swift in Sources */,
 				639FC05C23BBF56B00B6013F /* RestaurantsAPIClient.swift in Sources */,
 				6344493823898DA700C7FF99 /* SceneDelegate.swift in Sources */,
+				63BCF88523EB0CA6006EC326 /* AddEditVC.swift in Sources */,
 				63DE9CF923AF21D60032A666 /* NetworkHelper.swift in Sources */,
 				633E2A3423B206A800B5AD7D /* OffersCell.swift in Sources */,
 				634449542389915200C7FF99 /* RestaurantInfoVC.swift in Sources */,
@@ -417,6 +440,7 @@
 				634449612389DA6100C7FF99 /* RestaurantVC.swift in Sources */,
 				63DE9CF723AF21B10032A666 /* UIViewController+Alerts.swift in Sources */,
 				637B9BEB238B204200AEBDAA /* LoyaltyCardVC.swift in Sources */,
+				63BCF88123EB0222006EC326 /* BusinessHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
